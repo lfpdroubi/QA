@@ -10,6 +10,7 @@ output:
       highlightStyle: github
       highlightLines: true
       countIncrementalSlides: false
+      countdown: 60000
 ---
 
 background-image: url(https://blogs-origin.cdc.gov/publichealthmatters/files/2017/03/Snow-cholera-map-1_banner-1.jpg)
@@ -17,6 +18,31 @@ background-image: url(https://blogs-origin.cdc.gov/publichealthmatters/files/201
 ```{r setup, include=FALSE}
 options(htmltools.dir.version = FALSE)
 ```
+
+???
+
+Image credit: John Snow, Epidemia de Cólera, Londres, 1854.
+
+---
+### Evolução da população urbana
+
+--
+
+|País/Região                    | Ano   |       |       |       |       |       |
+|:------------------------------|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
+|                               | 1960  | 1970  | 1980  | 1990  | 2000  | 2015  |
+| Mundo                         | 33,8% | 36,6% | 39,3% | 43,0% | 46,7% | 53,9% | 
+| Países desenvolvidos (a)      | 61,1% | 66,8% | 70,3% | 72,4% | 74,2% | 78,1% |
+| Países menos desenvolvidos (b)| 21,9% | 25,3% | 29,4% | 34,9% | 40,1% | 49,0% |
+| Europa                        | 57,4% | 63,1% | 67,6% | 69,9% | 71,1% | 73,9% |
+| Europa oriental               | 48,9% | 56,6% | 63,8% | 68,0% | 68,2% | 69,3% |
+| Europa ocidental              | 68,6% | 72,1% | 73,4% | 74,0% | 76,0% | 79,4% |
+| EUA                           | 70,0% | 73,6% | 73,7% | 75,3% | 79,1% | 81,7% |      
+| Brasil                        | 46,1% | 55,9% | 65,5% | 73,9% | 81,2% | 85,8% |
+População urbana (%). Fonte: UN.  
+a) Europa, América do Norte, Austrália/Nova Zelândia e Japão.  
+b) Africa, Ásia (menos Japão), América Latina e Caribe mais Melanesia e Micronesia. 
+
 
 ---
 class: inverse, center, middle
@@ -160,23 +186,6 @@ ii. Na Inglaterra, Alemanha e Japão, foram utilizadas as medidas de segundo tip
 --
 
 * O alto desemprego e baixos salários não incentivam o investimento capitalista, ou seja, o investimento poupador de mão-de-obra.
-
----
-### A abertura do complexo rural no Brasil
-
-
---
-
-|País/Região                 | Ano   |       |       |       |       |       |
-|:---------------------------|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
-|                            | 1960  | 1970  | 1980  | 1990  | 2000  | 2015  |
-| Mundo                      | 33,8% | 36,6% | 39,3% | 43,0% | 46,7% | 53,9% | 
-| Países desenvolvidos       | 61,1% | 66,8% | 70,3% | 72,4% | 74,2% | 78,1% |
-| Países menos desenvolvidos | 21,9% | 25,3% | 29,4% | 34,9% | 40,1% | 49,0% |
-| Europa                     | 57,4% | 63,1% | 67,6% | 69,9% | 71,1% | 73,9% |
-| EUA                        | 70,0% | 73,6% | 73,7% | 75,3% | 79,1% | 81,7% |      
-| Brasil                     | 46,1% | 55,9% | 65,5% | 73,9% | 81,2% | 85,8% |
-População urbana (%). Fonte: UN
 
 ---
 ### Situação Atual
