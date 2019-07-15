@@ -2,7 +2,7 @@
 title: "A Questão Agrária"
 subtitle: "implicações sobre o planejamento urbano e rural"
 author: "Luiz F. P. Droubi"
-date: "`r format(Sys.Date(), '%d/%m/%Y')`"
+date: "15/07/2019"
 output:
   html_document:
     fig_caption: yes
@@ -26,20 +26,7 @@ csl: ABNT_UFPR_2011-Mendeley.csl
 bibliography: bibliography.bib
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(tidy = FALSE, cache.extra = packageVersion('tufte'),
-                      echo = FALSE)
-options(htmltools.dir.version = FALSE)
-library(ztable)
-options(ztable.zebra=NULL)
-options(ztable.zebra.color="platinum")
-options(ztable.colnames.bold=TRUE)
-library(flextable)
-library(officer)
-library(magrittr)
-library(tibble)
-library(xts)
-```
+
 
 # Resumo {-}
 
@@ -72,50 +59,197 @@ Dados compilados pela ONU foram organizados na tabela abaixo com o intuito de de
 <!-- a) Europa, América do Norte, Austrália/Nova Zelândia e Japão.   -->
 <!-- b) Africa, Ásia (menos Japão), América Latina e Caribe mais Melanesia e Micronesia. -->
 
-```{r}
-pop_urb <- tribble(
-  ~`País/Região`,              ~`1960`, ~`1970`, ~`1980`, ~`1990`, ~`2000`, ~`2015`,
-  "Total",                        .338,    .366,    .393,    .430,    .467,    .539,
-  "Países Desenvolvidos",         .611,    .668,    .703,    .724,    .742,    .781,
-  "Países em Desenvolvimento",    .219,    .253,    .294,    .349,    .401,    .490,
-  "Total",                        .574,    .631,    .676,    .699,    .711,    .739,
-  "Oriental",                     .489,    .566,    .638,    .680,    .682,    .693,
-  "Ocidental",                    .686,    .721,    .734,    .740,    .760,    .794,
-  "Latina e Caribe",              .494,    .573,    .646,    .707,    .755,    .799,
-  "do Sul",                       .518,    .600,    .676,    .742,    .796,    .835,
-  "Central",                      .464,    .537,    .603,    .650,    .687,    .737,
-  "do Norte",                     .699,    .738,    .739,    .754,    .791,    .816,
-  "EUA",                          .700,    .736,    .737,    .753,    .791,    .817,
-  "Argentina",                    .736,    .789,    .829,    .870,    .891,    .915,
-  "Brasil",                       .461,    .559,    .655,    .739,    .812,    .858
-)
-# pop_urb <- data.frame(Mundo = c(.338, .366, .393, .43, .467, .539),
-#                       Paises_Desenvolvidos = c(.611, .668, .703, .724, .742, .781),
-#                       Paises_em_Desenvolvimento = c(.219, .253, .294, .349, .401, .49),
-#                       Europa = c(.574, .631, .676, .699, .711, .739),
-#                       Europa_Oriental = c(.489, .566, .638, .68, .682, .693),
-#                       Europa_Ocidental = c(.686, .721, .734, .74, .76, .794),
-#                       EUA = c(.7, .736, .737, .753, .791, .817),
-#                       Brasil = c(.461, .559, .655, .739, .812, .858))
-# pop_urb <- as.xts(pop_urb, 
-#                   order.by = as.yearmon(c('1960-07', '1970-07', '1980-07', 
-#                                           '1990-07', '2000-07', '2015-07')))
-```
 
-```{r, results='asis'}
-rgroup=c("Mundo","Europa","América")
-n.rgroup=c(3,3,7)
-cgroup=c("","Ano")
-n.cgroup=c(1,6)
-z <- ztable(as.data.frame(pop_urb), 
-            caption = "População urbana (%). Fonte: O autor.",
-            caption.placement = "top", type="html", 
-            include.rownames = FALSE, digits = 3) %>%
-    addcgroup(cgroup=cgroup,n.cgroup=n.cgroup) %>%
-    addrgroup(rgroup=rgroup,n.rgroup=n.rgroup,cspan.rgroup=1)
-z
-#ztable2flextable(z)
-```
+
+<head><style>
+        table {
+              font-family: times ;
+color:  black ;
+text-align: right;}
+        th {
+              padding: 1px 1px 5px 5px;
+	        }
+        td {
+             padding: 1px 1px 5px 5px; }
+      </style></head><table align="center" style="border-collapse: collapse; caption-side:top; font-size:11pt;"><caption style="text-align:center;">População urbana (%). Fonte: O autor.</caption><tr>
+<td colspan=" 1 " align="center" style="font-weight: bold;border-top: 2px solid gray; border-bottom: hidden; border-left: 0px solid black;"></td>
+<td style="border-top: 2px solid gray;border-bottom: hidden">&nbsp;</td>
+<td colspan=" 6 " align="center" style="font-weight: bold;border-top: 2px solid gray; border-bottom: 1px solid gray; border-left: 0px solid black;border-right:NApx solid black;">Ano</td>
+</tr>
+<tr>
+<th <th align="center" style="font-weight: bold;border-left: 0px solid black;border-bottom: 1px solid gray;">País/Região</th>
+<th style="border-bottom: 1px solid gray;">&nbsp;</th>
+<th <th align="center" style="font-weight: bold;border-left: 0px solid black;border-bottom: 1px solid gray;">1960</th>
+<th <th align="center" style="font-weight: bold;border-left: 0px solid black;border-bottom: 1px solid gray;">1970</th>
+<th <th align="center" style="font-weight: bold;border-left: 0px solid black;border-bottom: 1px solid gray;">1980</th>
+<th <th align="center" style="font-weight: bold;border-left: 0px solid black;border-bottom: 1px solid gray;">1990</th>
+<th <th align="center" style="font-weight: bold;border-left: 0px solid black;border-bottom: 1px solid gray;">2000</th>
+<th <th align="center" style="font-weight: bold;border-left: 0px solid black;border-bottom: 1px solid gray;">2015</th>
+</tr>
+<tr>
+<td align="left" style="font-weight: bold; border-left: 0px solid black; ">Mundo</td>
+<td style="border-left: 0px solid black; "></td>
+<td></td>
+<td style="border-left: 0px solid black; "></td>
+<td style="border-left: 0px solid black; "></td>
+<td style="border-left: 0px solid black; "></td>
+<td style="border-left: 0px solid black; "></td>
+<td style="border-left: 0px solid black; "></td>
+ </tr>
+<tr>
+<td align="left" style="border-left: 0px solid black;border-top: hidden;">Total</td>
+<td style="border-top: hidden;"></td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.338</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.366</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.393</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.430</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.467</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.539</td>
+</tr>
+<tr>
+<td align="left" style="border-left: 0px solid black;border-top: hidden;">Países Desenvolvidos</td>
+<td style="border-top: hidden;"></td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.611</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.668</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.703</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.724</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.742</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.781</td>
+</tr>
+<tr>
+<td align="left" style="border-left: 0px solid black;border-top: hidden;">Países em Desenvolvimento</td>
+<td style="border-top: hidden;"></td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.219</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.253</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.294</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.349</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.401</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.490</td>
+</tr>
+<tr>
+<td align="left" style="font-weight: bold; border-left: 0px solid black; border-top: hidden; ">Europa</td>
+<td style="border-left: 0px solid black; border-top: hidden; "></td>
+<td style="border-top: hidden;"></td>
+<td style="border-left: 0px solid black; border-top: hidden; "></td>
+<td style="border-left: 0px solid black; border-top: hidden; "></td>
+<td style="border-left: 0px solid black; border-top: hidden; "></td>
+<td style="border-left: 0px solid black; border-top: hidden; "></td>
+<td style="border-left: 0px solid black; border-top: hidden; "></td>
+ </tr>
+<tr>
+<td align="left" style="border-left: 0px solid black;border-top: hidden;">Total</td>
+<td style="border-top: hidden;"></td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.574</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.631</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.676</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.699</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.711</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.739</td>
+</tr>
+<tr>
+<td align="left" style="border-left: 0px solid black;border-top: hidden;">Oriental</td>
+<td style="border-top: hidden;"></td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.489</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.566</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.638</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.680</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.682</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.693</td>
+</tr>
+<tr>
+<td align="left" style="border-left: 0px solid black;border-top: hidden;">Ocidental</td>
+<td style="border-top: hidden;"></td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.686</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.721</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.734</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.740</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.760</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.794</td>
+</tr>
+<tr>
+<td align="left" style="font-weight: bold; border-left: 0px solid black; border-top: hidden; ">América</td>
+<td style="border-left: 0px solid black; border-top: hidden; "></td>
+<td style="border-top: hidden;"></td>
+<td style="border-left: 0px solid black; border-top: hidden; "></td>
+<td style="border-left: 0px solid black; border-top: hidden; "></td>
+<td style="border-left: 0px solid black; border-top: hidden; "></td>
+<td style="border-left: 0px solid black; border-top: hidden; "></td>
+<td style="border-left: 0px solid black; border-top: hidden; "></td>
+ </tr>
+<tr>
+<td align="left" style="border-left: 0px solid black;border-top: hidden;">Latina e Caribe</td>
+<td style="border-top: hidden;"></td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.494</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.573</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.646</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.707</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.755</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.799</td>
+</tr>
+<tr>
+<td align="left" style="border-left: 0px solid black;border-top: hidden;">do Sul</td>
+<td style="border-top: hidden;"></td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.518</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.600</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.676</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.742</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.796</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.835</td>
+</tr>
+<tr>
+<td align="left" style="border-left: 0px solid black;border-top: hidden;">Central</td>
+<td style="border-top: hidden;"></td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.464</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.537</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.603</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.650</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.687</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.737</td>
+</tr>
+<tr>
+<td align="left" style="border-left: 0px solid black;border-top: hidden;">do Norte</td>
+<td style="border-top: hidden;"></td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.699</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.738</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.739</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.754</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.791</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.816</td>
+</tr>
+<tr>
+<td align="left" style="border-left: 0px solid black;border-top: hidden;">EUA</td>
+<td style="border-top: hidden;"></td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.700</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.736</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.737</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.753</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.791</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.817</td>
+</tr>
+<tr>
+<td align="left" style="border-left: 0px solid black;border-top: hidden;">Argentina</td>
+<td style="border-top: hidden;"></td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.736</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.789</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.829</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.870</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.891</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.915</td>
+</tr>
+<tr>
+<td align="left" style="border-left: 0px solid black;border-top: hidden;">Brasil</td>
+<td style="border-top: hidden;"></td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.461</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.559</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.655</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.739</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.812</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.858</td>
+</tr>
+<tr>
+<td colspan="8" align="left" style="font-size:9pt ;border-top: 1px solid black; border-bottom: hidden;"></td>
+</tr>
+</table>
 
 
 
