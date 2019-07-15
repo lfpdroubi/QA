@@ -99,32 +99,32 @@ text-align: right;}
 <tr>
 <td align="left" style="border-left: 0px solid black;border-top: hidden;">Total</td>
 <td style="border-top: hidden;"></td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.338</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.366</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.393</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.430</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.467</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.539</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">33.8</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">36.6</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">39.3</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">43.0</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">46.7</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">53.9</td>
 </tr>
 <tr>
 <td align="left" style="border-left: 0px solid black;border-top: hidden;">Países Desenvolvidos</td>
 <td style="border-top: hidden;"></td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.611</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.668</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.703</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.724</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.742</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.781</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">61.1</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">66.8</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">70.3</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">72.4</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">74.2</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">78.1</td>
 </tr>
 <tr>
 <td align="left" style="border-left: 0px solid black;border-top: hidden;">Países em Desenvolvimento</td>
 <td style="border-top: hidden;"></td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.219</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.253</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.294</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.349</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.401</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.490</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">21.9</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">25.3</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">29.4</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">34.9</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">40.1</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">49.0</td>
 </tr>
 <tr>
 <td align="left" style="font-weight: bold; border-left: 0px solid black; border-top: hidden; ">Europa</td>
@@ -139,32 +139,32 @@ text-align: right;}
 <tr>
 <td align="left" style="border-left: 0px solid black;border-top: hidden;">Total</td>
 <td style="border-top: hidden;"></td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.574</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.631</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.676</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.699</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.711</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.739</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">57.4</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">63.1</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">67.6</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">69.9</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">71.1</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">73.9</td>
 </tr>
 <tr>
 <td align="left" style="border-left: 0px solid black;border-top: hidden;">Oriental</td>
 <td style="border-top: hidden;"></td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.489</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.566</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.638</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.680</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.682</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.693</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">48.9</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">56.6</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">63.8</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">68.0</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">68.2</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">69.3</td>
 </tr>
 <tr>
 <td align="left" style="border-left: 0px solid black;border-top: hidden;">Ocidental</td>
 <td style="border-top: hidden;"></td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.686</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.721</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.734</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.740</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.760</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.794</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">68.6</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">72.1</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">73.4</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">74.0</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">76.0</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">79.4</td>
 </tr>
 <tr>
 <td align="left" style="font-weight: bold; border-left: 0px solid black; border-top: hidden; ">América</td>
@@ -179,78 +179,81 @@ text-align: right;}
 <tr>
 <td align="left" style="border-left: 0px solid black;border-top: hidden;">Latina e Caribe</td>
 <td style="border-top: hidden;"></td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.494</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.573</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.646</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.707</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.755</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.799</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">49.4</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">57.3</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">64.6</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">70.7</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">75.5</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">79.9</td>
 </tr>
 <tr>
 <td align="left" style="border-left: 0px solid black;border-top: hidden;">do Sul</td>
 <td style="border-top: hidden;"></td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.518</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.600</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.676</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.742</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.796</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.835</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">51.8</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">60.0</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">67.6</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">74.2</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">79.6</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">83.5</td>
 </tr>
 <tr>
 <td align="left" style="border-left: 0px solid black;border-top: hidden;">Central</td>
 <td style="border-top: hidden;"></td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.464</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.537</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.603</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.650</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.687</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.737</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">46.4</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">53.7</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">60.3</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">65.0</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">68.7</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">73.7</td>
 </tr>
 <tr>
 <td align="left" style="border-left: 0px solid black;border-top: hidden;">do Norte</td>
 <td style="border-top: hidden;"></td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.699</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.738</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.739</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.754</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.791</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.816</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">69.9</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">73.8</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">73.9</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">75.4</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">79.1</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">81.6</td>
 </tr>
 <tr>
 <td align="left" style="border-left: 0px solid black;border-top: hidden;">EUA</td>
 <td style="border-top: hidden;"></td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.700</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.736</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.737</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.753</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.791</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.817</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">70.0</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">73.6</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">73.7</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">75.3</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">79.1</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">81.7</td>
 </tr>
 <tr>
 <td align="left" style="border-left: 0px solid black;border-top: hidden;">Argentina</td>
 <td style="border-top: hidden;"></td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.736</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.789</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.829</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.870</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.891</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.915</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">73.6</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">78.9</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">82.9</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">87.0</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">89.1</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">91.5</td>
 </tr>
 <tr>
 <td align="left" style="border-left: 0px solid black;border-top: hidden;">Brasil</td>
 <td style="border-top: hidden;"></td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.461</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.559</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.655</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.739</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.812</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">0.858</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">46.1</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">55.9</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">65.5</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">73.9</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">81.2</td>
+<td align="right" style="border-left: 0px solid black;border-top: hidden;">85.8</td>
 </tr>
 <tr>
 <td colspan="8" align="left" style="font-size:9pt ;border-top: 1px solid black; border-bottom: hidden;"></td>
 </tr>
 </table>
 
+<!-- # ```{r} -->
+<!-- # ztable2flextable(z) -->
+<!-- # ``` -->
 
 
 Em meados dos anos 60, apenas 46,1% da população brasileira era urbana, uma proporção bem menor do que a dos países do então primeiro mundo (EUA e Europa Ocidental), hoje ditos desenvolvidos, que girava então em torno dos 70% da população. 
@@ -344,7 +347,7 @@ De acordo com Rangel [-@rangel1988, 156], "a via democrática -- divisão dos la
 
 # Qual reforma agrária?
 
-Como foi visto, o assunto é complexo e requer uma análise de todo o contexto econômico, social e político vigente. A tão sonhada "reforma agrária" a que normalmente se refere a mídia, os movimentos sociais ou a população em geral, deveria ter tido lugar ainda na década dde 1930, ou seja, em fase anterior ao início da industrialização brasileira. Para Rangel [@rangel1986a, 154], a "reforma agrária, no sentido convencional da expressão, isto é, a implantação de propriedade familiar suficientemente ampla, para permitir, ao lado da produção agrícola para o mercado, uma produção complementar agrícola e não-agrícola, isto é, para autoconsumo, pode justificar-se em certos casos, especialmente quando seja possível o renascimento da policultura tradicional e onde a fazenda capitalista, mono ou oligoculturista, ainda não tenha aparecido". No atual contexto econômico, porém, esta reforma, com a dissolução do latifúndio produtivo para assentamento de famílias, levaria a uma regressão tecnológica no campo, o que seria altamente prejudicial para a economia brasileira como um todo. 
+Como foi visto, o assunto é complexo e requer uma análise de todo o contexto econômico, social e político vigente. A tão sonhada "reforma agrária" a que normalmente se refere a mídia, os movimentos sociais ou a população em geral, deveria ter tido lugar ainda na década de 1930, ou seja, em fase anterior ao início da industrialização brasileira. Para Rangel [@rangel1986a, 154], a "reforma agrária, no sentido convencional da expressão, isto é, a implantação de propriedade familiar suficientemente ampla, para permitir, ao lado da produção agrícola para o mercado, uma produção complementar agrícola e não-agrícola, isto é, para autoconsumo, pode justificar-se em certos casos, especialmente quando seja possível o renascimento da policultura tradicional e onde a fazenda capitalista, mono ou oligoculturista, ainda não tenha aparecido". No atual contexto econômico, porém, esta reforma, com a dissolução do latifúndio produtivo para assentamento de famílias, levaria a uma regressão tecnológica no campo, o que seria altamente prejudicial para a economia brasileira como um todo. 
 
 Isto dito, Rangel então propõe então que, no Brasil, com a agricultura capitalista plenamente desenvolvida, uma segunda variante de reforma agrária, "*não necessariamente rural*", com a finalidade de "recompor a economia natural onde quer que isto seja possível", viabilizando "uma produção complementar, deixando a produção agrícola para o mercado a cargo da fazenda capitalista com mão-de-obra assalariada",seja implementada [@rangel1986a, 155].
 

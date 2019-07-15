@@ -4,10 +4,10 @@ subtitle: "implicações sobre o planejamento urbano e rural"
 author: "Luiz F. P. Droubi"
 date: "`r format(Sys.Date(), '%d/%m/%Y')`"
 output:
+  word_document: default
   html_document:
     fig_caption: yes
     keep_md: yes
-  word_document: default
   pdf_document:
     includes:
       in_header: preamble.tex
@@ -34,8 +34,8 @@ library(ztable)
 options(ztable.zebra=NULL)
 options(ztable.zebra.color="platinum")
 options(ztable.colnames.bold=TRUE)
-library(flextable)
 library(officer)
+library(flextable)
 library(magrittr)
 library(tibble)
 library(xts)
@@ -75,19 +75,19 @@ Dados compilados pela ONU foram organizados na tabela abaixo com o intuito de de
 ```{r}
 pop_urb <- tribble(
   ~`País/Região`,              ~`1960`, ~`1970`, ~`1980`, ~`1990`, ~`2000`, ~`2015`,
-  "Total",                        .338,    .366,    .393,    .430,    .467,    .539,
-  "Países Desenvolvidos",         .611,    .668,    .703,    .724,    .742,    .781,
-  "Países em Desenvolvimento",    .219,    .253,    .294,    .349,    .401,    .490,
-  "Total",                        .574,    .631,    .676,    .699,    .711,    .739,
-  "Oriental",                     .489,    .566,    .638,    .680,    .682,    .693,
-  "Ocidental",                    .686,    .721,    .734,    .740,    .760,    .794,
-  "Latina e Caribe",              .494,    .573,    .646,    .707,    .755,    .799,
-  "do Sul",                       .518,    .600,    .676,    .742,    .796,    .835,
-  "Central",                      .464,    .537,    .603,    .650,    .687,    .737,
-  "do Norte",                     .699,    .738,    .739,    .754,    .791,    .816,
-  "EUA",                          .700,    .736,    .737,    .753,    .791,    .817,
-  "Argentina",                    .736,    .789,    .829,    .870,    .891,    .915,
-  "Brasil",                       .461,    .559,    .655,    .739,    .812,    .858
+  "Total",                        33.8,    36.6,    39.3,    43.0,    46.7,    53.9,
+  "Países Desenvolvidos",         61.1,    66.8,    70.3,    72.4,    74.2,    78.1,
+  "Países em Desenvolvimento",    21.9,    25.3,    29.4,    34.9,    40.1,    49.0,
+  "Total",                        57.4,    63.1,    67.6,    69.9,    71.1,    73.9,
+  "Oriental",                     48.9,    56.6,    63.8,    68.0,    68.2,    69.3,
+  "Ocidental",                    68.6,    72.1,    73.4,    74.0,    76.0,    79.4,
+  "Latina e Caribe",              49.4,    57.3,    64.6,    70.7,    75.5,    79.9,
+  "do Sul",                       51.8,    60.0,    67.6,    74.2,    79.6,    83.5,
+  "Central",                      46.4,    53.7,    60.3,    65.0,    68.7,    73.7,
+  "do Norte",                     69.9,    73.8,    73.9,    75.4,    79.1,    81.6,
+  "EUA",                          70.0,    73.6,    73.7,    75.3,    79.1,    81.7,
+  "Argentina",                    73.6,    78.9,    82.9,    87.0,    89.1,    91.5,
+  "Brasil",                       46.1,    55.9,    65.5,    73.9,    81.2,    85.8
 )
 # pop_urb <- data.frame(Mundo = c(.338, .366, .393, .43, .467, .539),
 #                       Paises_Desenvolvidos = c(.611, .668, .703, .724, .742, .781),
@@ -107,16 +107,23 @@ rgroup=c("Mundo","Europa","América")
 n.rgroup=c(3,3,7)
 cgroup=c("","Ano")
 n.cgroup=c(1,6)
+ms <- ztable(as.data.frame(pop_urb), include.rownames = FALSE, digits = 1)  %>%
+    addcgroup(cgroup=cgroup,n.cgroup=n.cgroup) %>%
+    addrgroup(rgroup=rgroup,n.rgroup=n.rgroup,cspan.rgroup=1)
 z <- ztable(as.data.frame(pop_urb), 
             caption = "População urbana (%). Fonte: O autor.",
             caption.placement = "top", type="html", 
-            include.rownames = FALSE, digits = 3) %>%
+            include.rownames = FALSE, digits = 1) %>%
     addcgroup(cgroup=cgroup,n.cgroup=n.cgroup) %>%
     addrgroup(rgroup=rgroup,n.rgroup=n.rgroup,cspan.rgroup=1)
-z
-#ztable2flextable(z)
+# z
 ```
 
+```{r}
+ztable2flextable(ms) %>% 
+  bold(part = "header", bold = TRUE ) %>%
+  theme_booktabs() 
+```
 
 
 Em meados dos anos 60, apenas 46,1% da população brasileira era urbana, uma proporção bem menor do que a dos países do então primeiro mundo (EUA e Europa Ocidental), hoje ditos desenvolvidos, que girava então em torno dos 70% da população. 
@@ -210,7 +217,7 @@ De acordo com Rangel [-@rangel1988, 156], "a via democrática -- divisão dos la
 
 # Qual reforma agrária?
 
-Como foi visto, o assunto é complexo e requer uma análise de todo o contexto econômico, social e político vigente. A tão sonhada "reforma agrária" a que normalmente se refere a mídia, os movimentos sociais ou a população em geral, deveria ter tido lugar ainda na década dde 1930, ou seja, em fase anterior ao início da industrialização brasileira. Para Rangel [@rangel1986a, 154], a "reforma agrária, no sentido convencional da expressão, isto é, a implantação de propriedade familiar suficientemente ampla, para permitir, ao lado da produção agrícola para o mercado, uma produção complementar agrícola e não-agrícola, isto é, para autoconsumo, pode justificar-se em certos casos, especialmente quando seja possível o renascimento da policultura tradicional e onde a fazenda capitalista, mono ou oligoculturista, ainda não tenha aparecido". No atual contexto econômico, porém, esta reforma, com a dissolução do latifúndio produtivo para assentamento de famílias, levaria a uma regressão tecnológica no campo, o que seria altamente prejudicial para a economia brasileira como um todo. 
+Como foi visto, o assunto é complexo e requer uma análise de todo o contexto econômico, social e político vigente. A tão sonhada "reforma agrária" a que normalmente se refere a mídia, os movimentos sociais ou a população em geral, deveria ter tido lugar ainda na década de 1930, ou seja, em fase anterior ao início da industrialização brasileira. Para Rangel [@rangel1986a, 154], a "reforma agrária, no sentido convencional da expressão, isto é, a implantação de propriedade familiar suficientemente ampla, para permitir, ao lado da produção agrícola para o mercado, uma produção complementar agrícola e não-agrícola, isto é, para autoconsumo, pode justificar-se em certos casos, especialmente quando seja possível o renascimento da policultura tradicional e onde a fazenda capitalista, mono ou oligoculturista, ainda não tenha aparecido". No atual contexto econômico, porém, esta reforma, com a dissolução do latifúndio produtivo para assentamento de famílias, levaria a uma regressão tecnológica no campo, o que seria altamente prejudicial para a economia brasileira como um todo. 
 
 Isto dito, Rangel então propõe então que, no Brasil, com a agricultura capitalista plenamente desenvolvida, uma segunda variante de reforma agrária, "*não necessariamente rural*", com a finalidade de "recompor a economia natural onde quer que isto seja possível", viabilizando "uma produção complementar, deixando a produção agrícola para o mercado a cargo da fazenda capitalista com mão-de-obra assalariada",seja implementada [@rangel1986a, 155].
 
