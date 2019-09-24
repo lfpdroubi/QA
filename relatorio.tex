@@ -87,7 +87,7 @@
   \postauthor{\par}
       \predate{\centering\large\emph}
   \postdate{\par}
-    \date{15/07/2019}
+    \date{24/09/2019}
 
 \usepackage[brazil]{babel}
 \usepackage{graphicx}
@@ -95,6 +95,8 @@
 \usepackage{subfig}
 \usepackage{caption}
 \usepackage{lastpage}
+\usepackage{rotating}
+\usepackage{dcolumn}
 \setlength{\parindent}{1.25cm} % Default is 15pt.
 \usepackage{indentfirst}
 \usepackage{mathptmx} % para Times New Roman
@@ -111,6 +113,20 @@
 \fancyfoot{}
 % Set the right side of the footer to be the page number
 \fancyfoot[R]{\thepage~/~\pageref{LastPage}}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{colortbl}
+\usepackage{pdflscape}
+\usepackage{tabu}
+\usepackage{threeparttable}
+\usepackage{threeparttablex}
+\usepackage[normalem]{ulem}
+\usepackage{makecell}
+\usepackage{xcolor}
 
 \begin{document}
 \maketitle
@@ -119,21 +135,20 @@
 \section*{Resumo}\label{resumo}}
 \addcontentsline{toc}{section}{Resumo}
 
-Este trabalho foi desenvolvido para obtenção de conceito na Disciplina
-TGT4100181 do Programa de Pós-Graduação em Engenharia de Transportes e
-Gestão Territorial da UFSC -- Cadastro Técnico Multifinalitário. Teve
-como motivação as três condições, elencadas por Pereira
-(\protect\hyperlink{ref-questaoagraria}{1987}), como necessárias à
-implantação da reforma agrária, quais sejam: \textbf{a.} que haja no
-país uma alta concentração de renda; \textbf{b.} que haja verdadeira
-miséria rural no País e; \textbf{c.} que haja relação entre a reforma
-agrária e o desenvolvimento nacional. Pra nós claro está que as
+Este trabalho teve como motivação o estudo das três condições elencadas
+por Pereira (\protect\hyperlink{ref-questaoagraria}{1987}) como
+necessárias à implantação da reforma agrária, quais sejam: \textbf{a.}
+que haja no país uma alta concentração de renda; \textbf{b.} que haja
+verdadeira miséria rural no País e; \textbf{c.} que haja relação entre a
+reforma agrária e o desenvolvimento nacional. Pra nós claro está que as
 condições \textbf{a.} e \textbf{b.} estão desde há muito tempo intocadas
 no Brasil, ou seja, estão presentes desde a origem. Coube-nos então,
 investigar se há verdadeira relação, ainda, entre a reforma e o
 desenvolvimento e ainda, qual reforma deverá ter lugar no atual contexto
 econômico, social e político, de maneira que não haja retrocesso no
-desenvolvimento econômico do país.
+desenvolvimento econômico do país. Ainda foi tratado da possibilidade de
+aplicação das ferramentas clássicas do planejamento urbano nas condições
+das economias da América Latina.
 
 \hypertarget{introducao}{%
 \section{Introdução}\label{introducao}}
@@ -153,7 +168,7 @@ entendido, tampouco será possível compreender o problema da
 Falando de modo sucinto, a ``manufatura'' e os serviços são novas formas
 de aplicação de parte do tempo de trabalho da população que antes estava
 na ``agricultura''. Mas, por sua vez, a própria ``agricultura'' se
-reorganiza quando a tranferência ocorre.(RANGEL,
+reorganiza quando a transferência ocorre.(RANGEL,
 \protect\hyperlink{ref-rangel1954}{2012}\protect\hyperlink{ref-rangel1954}{a},
 p. 89)
 \end{quote}
@@ -164,8 +179,9 @@ chamada ``via prussiana'' ou \emph{junker} (RANGEL,
 p. 155), que é um tipo de reforma agrária que consiste na substituição
 do latifúndio feudal pelo latifúndio capitalista. Este tipo de
 desenvolvimento tem como característica se dar sem a execução prévia da
-reforma agrária -- no sentido da distribuição dos latifúndios em
-pequenas propriedades, como ocorre na via clássica ou democrática.
+reforma agrária no sentido clássico, i.e.~no sentido da distribuição dos
+latifúndios em pequenas propriedades, a chamada via clássica ou
+democrática.
 
 Apesar de permitir imprimir um ``impulso extraordinário e energético'' à
 industrialização, a via prussiana ``promove uma distribuição muito
@@ -181,46 +197,47 @@ cortiços e favelas para acomodar a parte mais carente da população que,
 expulsa do campo, vai se aglomerar nos grandes centros urbanos em busca
 da sua sobrevivência.
 
-Dados compilados pela ONU foram organizados na tabela abaixo com o
-intuito de demonstrar o tamanho exato deste problema.
+Dados de porcentagem de população urbana em diversos países compilados
+pela ONU foram organizados na tabela 1 com o intuito de demonstrar a
+evolução e o atual tamanho deste problema.
 
-\definecolor{platinum}{rgb}{0.9, 0.89, 0.89} 
-\definecolor{black}{rgb}{0.0, 0.0, 0.0} 
-\definecolor{black}{rgb}{0.0, 0.0, 0.0} 
-\definecolor{black}{rgb}{0.0, 0.0, 0.0} 
-\begin{table}[!hbtp]
-\begin{center}
-\begin{normalsize}
-\color{black}
-\begin{tabular}{lcrrrrrrc}
-\multicolumn{9}{c}{População urbana (%). Fonte: O autor.}\\ 
-\toprule[1.2pt]
-\cellcolor{white} &\multicolumn{1}{c}{\textbf{}}&&\multicolumn{6}{c}{\textbf{Ano}}\\ 
-\cline{4-9}
-&\textbf{País/Região}&&\textbf{1960}&\textbf{1970}&\textbf{1980}&\textbf{1990}&\textbf{2000}&\textbf{2015}\\ 
+\begin{table}[!h]
+
+\caption{\label{tab:unnamed-chunk-2}População Urbana (\%). Fonte: Nações Unidas.}
+\centering
+\begin{tabular}{lrrrrrr}
+\toprule
+\multicolumn{1}{c}{} & \multicolumn{6}{c}{Ano} \\
+\cmidrule(l{3pt}r{3pt}){2-7}
+País/Região & 1960 & 1970 & 1980 & 1990 & 2000 & 2015\\
 \midrule
-\textbf{Mundo}&&&&&&&&\\ 
-\cellcolor{platinum}1&\cellcolor{platinum}Mundo&\cellcolor{platinum}&\cellcolor{platinum}0.34&\cellcolor{platinum}0.37&\cellcolor{platinum}0.39&\cellcolor{platinum}0.43&\cellcolor{platinum}0.47&\cellcolor{platinum}0.54\\ 
-2&Países Desenvolvidos&&0.61&0.67&0.70&0.72&0.74&0.78\\ 
-\cellcolor{platinum}3&\cellcolor{platinum}Países em Desenvolvimento&\cellcolor{platinum}&\cellcolor{platinum}0.22&\cellcolor{platinum}0.25&\cellcolor{platinum}0.29&\cellcolor{platinum}0.35&\cellcolor{platinum}0.40&\cellcolor{platinum}0.49\\ 
-\textbf{Europa}&&&&&&&&\\ 
-4&Europa&&0.57&0.63&0.68&0.70&0.71&0.74\\ 
-\cellcolor{platinum}5&\cellcolor{platinum}Europa Ocidental&\cellcolor{platinum}&\cellcolor{platinum}0.49&\cellcolor{platinum}0.57&\cellcolor{platinum}0.64&\cellcolor{platinum}0.68&\cellcolor{platinum}0.68&\cellcolor{platinum}0.69\\ 
-6&Europa Oriental&&0.69&0.72&0.73&0.74&0.76&0.79\\ 
-\textbf{América}&&&&&&&&\\ 
-\cellcolor{platinum}7&\cellcolor{platinum}EUA&\cellcolor{platinum}&\cellcolor{platinum}0.70&\cellcolor{platinum}0.74&\cellcolor{platinum}0.74&\cellcolor{platinum}0.75&\cellcolor{platinum}0.79&\cellcolor{platinum}0.82\\ 
-8&Brasil&&0.46&0.56&0.66&0.74&0.81&0.86\\ 
-\bottomrule[1.2pt]
+\rowcolor{gray!6}  \addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{Mundo}}\\
+\hspace{1em}Total & 33,8 & 36,6 & 39,3 & 43,0 & 46,7 & 53,9\\
+\hspace{1em}Países Desenvolvidos & 61,1 & 66,8 & 70,3 & 72,4 & 74,2 & 78,1\\
+\hspace{1em}Países em Desenvolvimento & 21,9 & 25,3 & 29,4 & 34,9 & 40,1 & 49,0\\
+\rowcolor{gray!6}  \addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{Europa}}\\
+\hspace{1em}Total & 57,4 & 63,1 & 67,6 & 69,9 & 71,1 & 73,9\\
+\hspace{1em}Oriental & 48,9 & 56,6 & 63,8 & 68,0 & 68,2 & 69,3\\
+\hspace{1em}Ocidental & 68,6 & 72,1 & 73,4 & 74,0 & 76,0 & 79,4\\
+\rowcolor{gray!6}  \addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{América}}\\
+\hspace{1em}Latina e Caribe & 49,4 & 57,3 & 64,6 & 70,7 & 75,5 & 79,9\\
+\hspace{1em}do Sul & 51,8 & 60,0 & 67,6 & 74,2 & 79,6 & 83,5\\
+\hspace{1em}Central & 46,4 & 53,7 & 60,3 & 65,0 & 68,7 & 73,7\\
+\hspace{1em}do Norte & 69,9 & 73,8 & 73,9 & 75,4 & 79,1 & 81,6\\
+\hspace{1em}EUA & 70,0 & 73,6 & 73,7 & 75,3 & 79,1 & 81,7\\
+\hspace{1em}Argentina & 73,6 & 78,9 & 82,9 & 87,0 & 89,1 & 91,5\\
+\hspace{1em}Brasil & 46,1 & 55,9 & 65,5 & 73,9 & 81,2 & 85,8\\
+\bottomrule
 \end{tabular}
-\end{normalsize}
-\end{center}
 \end{table}
-\color{black}
 
 Em meados dos anos 60, apenas 46,1\% da população brasileira era urbana,
-uma proporção bem menor do que a dos países do então primeiro mundo (EUA
-e Europa Ocidental), hoje ditos desenvolvidos, que girava então em torno
-dos 70\% da população.
+uma proporção bem menor do que a dos países do então \emph{primeiro
+mundo} (EUA e Europa Ocidental), hoje ditos \emph{desenvolvidos}, que
+girava então em torno dos 70\% da população.
 
 Em apenas 10 anos, já em meados da década de 70, este número sofria um
 aumento vertiginoso de quase 10 pontos percentuais, com 55,9\% da
@@ -234,10 +251,10 @@ no mundo desenvolvido se estagnava.
 
 Chegado os anos 90, a população urbana brasileira atingiu notáveis
 73,9\% da população brasileira, número equiparado ao da população urbana
-do mundo desenvolvido (74\% na Europa Oriental).
+do mundo desenvolvido (74\% na Europa Ocidental).
 
 Em meados dos anos 2000, já então no século atual, ousamos ultrapassar,
-em proporção, a população urbana da Europa Oriental e a dos EUA,
+em proporção, a população urbana da Europa Ocidental e a dos EUA,
 chegando ao último dado de 2015, com 85,8\% da população brasileira
 vivendo nas cidades.
 
@@ -252,8 +269,8 @@ alto até fins da década seguinte, porém estagnou-se na década de 80, a
 chamada década perdida, sem que com isso a população urbana deixasse de
 crescer vertiginosamente.
 
-Para Rangel (RANGEL,
-\protect\hyperlink{ref-rangel1986a}{2012}\protect\hyperlink{ref-rangel1986a}{c},
+Para Rangel
+(\protect\hyperlink{ref-rangel1986a}{2012}\protect\hyperlink{ref-rangel1986a}{c},
 p. 151), ``essa redistribuição da população entre os quadros urbano e
 rural não tem, em si mesma, nada de anormal.{[}\ldots{}{]} A
 urbanização, em si mesma, é um fenômeno perfeitamente normal, numa
@@ -278,7 +295,7 @@ se faz escalonadamente, das áreas rurais para as cidades pequenas;
 destas para as médias e grandes, e posteriormente para as metrópoles
 gigantes. No fim da linha, portanto, vamos encontrar as cidades de São
 Paulo e do Rio de Janeiro''. Enfim, para Rangel, a origem deste
-``multidinário deslocamento demográfico'', está ``o modo como o país
+``multitudinário deslocamento demográfico'', está ``o modo como o país
 preparou sua estrutura agrária para a industrialização''.
 
 \hypertarget{contexto-historico}{%
@@ -289,20 +306,22 @@ substitui o Feudalismo, sistema em que a população encontrava-se toda
 concentrada no campo.
 
 Nas sociedades pré-capitalistas, a população predominante rural
-organizava-se no chamado `Complexo Rural', ou seja, eram produzidos pelo
-camponês não apenas os produtos agrícolas, mas todo o ferramental
-necessário, suas vestes e utensílios.
+organizava-se no chamado `Complexo Rural', ou seja, num ambiente rural
+onde eram produzidos não apenas os produtos agrícolas, mas onde também
+eram produzidos, pelos próprios camponeses, em uma muito baixa
+produtividade, todo o ferramental necessário para as suas atividades
+agrícolas, assim como suas vestes, utensílios domésticos e outros itens.
 
 A passagem do sistema feudal para o sistema capitalista ocorre com a
-divisão social do trabalho, ou seja, com o desenvolvimento de indústrias
-que vão aos poucos absorver as atividades não-agrícolas realizadas no
-campo.
+\emph{divisão social do trabalho}, ou seja, com o desenvolvimento de
+indústrias que vão aos poucos absorver as atividades não-agrícolas
+realizadas no campo.
 
 \begin{quote}
 Numa economia em expansão, com crescente industrialização,
 comercialização e urbanização, numerosos processos anteriormente levados
 a efeito antes dentro da casa da família ou unidade (econômica)
-famíliar, ou são completamente abandonados ou substituídos por processos
+familiar, ou são completamente abandonados ou substituídos por processos
 semelhantes em bases comerciais.(KUZNETS
 (\protect\hyperlink{ref-kuznets}{1952}, p. 41) \emph{apud} RANGEL
 (\protect\hyperlink{ref-rangel1956}{2012}\protect\hyperlink{ref-rangel1956}{d},
@@ -310,12 +329,11 @@ p. 218))
 \end{quote}
 
 \hypertarget{feudalismo}{%
-\section{Feudalismo}\label{feudalismo}}
+\subsection{Feudalismo}\label{feudalismo}}
 
-No feudalismo, tipo de organização social que historicamente antecede o
-capitalismo, toda terra está concentrada nas mãos do rei.
-
-As ``leis'' que regem uma sociedade feudal são:
+As ``leis'' ou ``motores primários'' do feudalismo são (RANGEL,
+\protect\hyperlink{ref-rangel1985}{2012}\protect\hyperlink{ref-rangel1985}{e},
+p. 126):
 
 \begin{itemize}
 \tightlist
@@ -325,36 +343,35 @@ As ``leis'' que regem uma sociedade feudal são:
   \emph{Nulle terre sans seigneur}
 \end{itemize}
 
-Segundo Rangel
-(\protect\hyperlink{ref-rangel1961}{2012}\protect\hyperlink{ref-rangel1961}{e},
+No feudalismo, tipo de organização social que historicamente antecede o
+capitalismo, toda terra está concentrada nas mãos do rei. Segundo Rangel
+(\protect\hyperlink{ref-rangel1961}{2012}\protect\hyperlink{ref-rangel1961}{f},
 p. 219), ``a existência de terra livre é incompatível com o
 feudalismo'', e , por conta disto, ``nas condições feudais, não tem
 preço e é, de fato ou de direito, inalienável''(RANGEL,
-\protect\hyperlink{ref-rangel1960}{2012}\protect\hyperlink{ref-rangel1960}{f},
+\protect\hyperlink{ref-rangel1960}{2012}\protect\hyperlink{ref-rangel1960}{g},
 p. 206).
 
 \hypertarget{a-crise-do-feudalismo}{%
-\subsection{A crise do feudalismo}\label{a-crise-do-feudalismo}}
+\subsubsection{A crise do feudalismo}\label{a-crise-do-feudalismo}}
 
 A sociedade feudal entra em crise quando a produção agrícola não
-consegue suprir a demanda da superpopulação gerada.
-
-Segundo Rangel
-(\protect\hyperlink{ref-rangel1961}{2012}\protect\hyperlink{ref-rangel1961}{e},
+consegue suprir a demanda da superpopulação gerada. Segundo Rangel
+(\protect\hyperlink{ref-rangel1961}{2012}\protect\hyperlink{ref-rangel1961}{f},
 p. 219), ``tempo houve em que a expansão do estoque populacional era
 objetivamente a maneira mais eficaz de expandir as forças produtivas e o
 produto social. Nesse tempo (regime feudal), a riqueza dos príncipes se
 media pelas almas dos seus domínios, e aumentar o número destas era a
 maneira óbvia de expandir aquela riqueza e também a do corpo social.
 Este foi forjando para si uma ética, um direito e uma política
-conducentes a esse resutado''.
+conducentes a esse resultado''.
 
 \hypertarget{o-complexo-rural}{%
-\subsection{O Complexo Rural}\label{o-complexo-rural}}
+\subsubsection{O Complexo Rural}\label{o-complexo-rural}}
 
 \begin{quote}
-A população de um páis de economia mercantil debilmente desenvolvida (ou
-não densevolvida de todo) é quase exclusivamente agrícola. Todavia, não
+A população de um país de economia mercantil debilmente desenvolvida (ou
+não desenvolvida de todo) é quase exclusivamente agrícola. Todavia, não
 se deve deduzir daí que ela se ocupa só da agricultura. Significa apenas
 que a população ocupada na agricultura transforma, ela mesma, os
 produtos da terra, sendo quase inexistentes o intercâmbio e a divisão do
@@ -411,14 +428,14 @@ p. 113):
   manufatureiras dentro do complexo.
 \end{enumerate}
 
-As medidas do tipo a) temm seu exemplo mais típico nos EUA e também na
+As medidas do tipo a) tem seu exemplo mais típico nos EUA e também na
 França, enquanto as medidas do tipo b) predominaram na Inglaterra,
 Alemanha e Japão (RANGEL,
 \protect\hyperlink{ref-rangel1954}{2012}\protect\hyperlink{ref-rangel1954}{a},
 pp. 114--115).
 
 \hypertarget{exodo-rural-e-industrializacao}{%
-\section{Êxodo rural e
+\subsection{Êxodo rural e
 industrialização}\label{exodo-rural-e-industrializacao}}
 
 \begin{quote}
@@ -428,27 +445,27 @@ Estados Unidos -- substituída pela pequena propriedade familiar ou
 \emph{homestead}, ao fortalecer as bases da economia natural ou de
 autoconsumo, resolve satisfatoriamente o problema na absorção dos
 excedentes de mão-de-obra no seio da própria economia camponesa,
-estancando ou reduzindo drasticamente o fluxo populacional responsálve
+estancando ou reduzindo drasticamente o fluxo populacional responsável
 pelo êxodo campo-cidade (RANGEL,
-\protect\hyperlink{ref-rangel1986b}{2012}\protect\hyperlink{ref-rangel1986b}{g},
+\protect\hyperlink{ref-rangel1986b}{2012}\protect\hyperlink{ref-rangel1986b}{h},
 p. 133).
 \end{quote}
 
-Segundo, Rangel
-(\protect\hyperlink{ref-rangel1986b}{2012}\protect\hyperlink{ref-rangel1986b}{g},
+Segundo Rangel
+(\protect\hyperlink{ref-rangel1986b}{2012}\protect\hyperlink{ref-rangel1986b}{h},
 p. 133), no entanto, ``esse tipo de superação das relações de produção
 feudais'', ou seja, a revolução democrático-burguesa, ``não é
 característico do Brasil. Sem embargo do surgimento de algumas `ilhas'
-de pequena propriedade camponse, notadamente nas áreas de colonização
+de pequena propriedade camponesa, notadamente nas áreas de colonização
 européia e japonesa nos estados do Sul, que mais confirmam a regra.''
 
 Pelo contrário, ``o modelo de desenvolvimento do capitalismo na
 agricultura brasileira foi e é a grande exploração capitalista, cada dia
-mais propensa ao uso de mão-de-obra assalariada e tendendo sempre ap
+mais propensa ao uso de mão-de-obra assalariada e tendendo sempre ao
 desmantelamento das bases da economia natural, causando por isso mesmo,
-o fenômeno do êxodo rural'' (RANGEL,
-\protect\hyperlink{ref-rangel1986b}{2012}\protect\hyperlink{ref-rangel1986b}{g},
-p. 134).
+o fenômeno do \textbf{êxodo rural}'' (RANGEL,
+\protect\hyperlink{ref-rangel1986b}{2012}\protect\hyperlink{ref-rangel1986b}{h},
+p. 134, grifo nosso).
 
 O caso brasileiro, porém, não é único: ``a industrialização da
 Inglaterra fez-se também, originariamente, nas condições de um enorme
@@ -458,13 +475,13 @@ produção manufatureira para exportação, enquanto no Brasil a
 industrialização teve seu desenvolvimento estimulado, ``nas condições de
 uma crônica crise cambial'', pela política de substituição de
 importações (RANGEL,
-\protect\hyperlink{ref-rangel1962}{2012}\protect\hyperlink{ref-rangel1962}{h},
+\protect\hyperlink{ref-rangel1962}{2012}\protect\hyperlink{ref-rangel1962}{i},
 pp. 43--44).
 
 Ocorre que, de acordo com Rangel
-(\protect\hyperlink{ref-rangel1986b}{2012}\protect\hyperlink{ref-rangel1986b}{g},
+(\protect\hyperlink{ref-rangel1986b}{2012}\protect\hyperlink{ref-rangel1986b}{h},
 p. 134), ``a superabundância e a barateza da mão-de-obra não costumam
-ser bons condicionanetes do processo de industrialização, dado que
+ser bons condicionantes do processo de industrialização, dado que
 desestimulam a formação de capital, isto é, o investimento. Ora, numa
 economia capitalista, o investimento é o motor primário do
 desenvolvimento \ldots{}''.
@@ -475,7 +492,7 @@ urbanização monstruosa}, sem comparação possível com a demanda de
 mão-de-obra que a indústria e os serviços não-agrícolas estavam
 suscitando nas cidades (perto de três milhões de novos citadinos a cada
 ano)\ldots{}'' (RANGEL,
-\protect\hyperlink{ref-rangel1986b}{2012}\protect\hyperlink{ref-rangel1986b}{g},
+\protect\hyperlink{ref-rangel1986b}{2012}\protect\hyperlink{ref-rangel1986b}{h},
 p. 134)
 
 \hypertarget{o-exodo-rural-como-obstaculo-ao-desenvolvimento}{%
@@ -491,7 +508,7 @@ implementação de nova tecnologia, promove dispensa de mão-de-obra
 (efeito para frente)''.
 
 Segundo Rangel (RANGEL,
-\protect\hyperlink{ref-rangel1986c}{2012}\protect\hyperlink{ref-rangel1986c}{i},
+\protect\hyperlink{ref-rangel1986c}{2012}\protect\hyperlink{ref-rangel1986c}{j},
 p. 142), um ``\,`exército industrial de reserva' limitado, isto é, algum
 desemprego, pode ser considerado útil, do ponto de vista da produção
 capitalista, porque serve de instrumento de coerção para os
@@ -506,8 +523,8 @@ não interessa apenas aos camponeses, mas à sociedade como um todo.''
 De acordo com Rangel
 (\protect\hyperlink{ref-rangel1988}{2012}\protect\hyperlink{ref-rangel1988}{b},
 p. 156), ``a via democrática -- divisão dos latifúndios em pequenas
-propriedades -- ao favorecer uma distribuição menos desigualitária de re
-da cria condições para um vigoroso efeito multiplicador dos
+propriedades -- ao favorecer uma distribuição menos desigualitária de
+renda, cria condições para um vigoroso efeito multiplicador dos
 investimentos, isto é, forte efeito para trás. Inversamente, a via
 prussiana, ao promover uma distribuição de renda mais desigualitária,
 debilita o efeito multiplicador, isto é, para trás, mas, por força da
@@ -516,13 +533,13 @@ dispensando mão-de-obra e, por isso mesmo, aumentando o efeito para
 diante.''
 
 \hypertarget{qual-reforma-agraria}{%
-\section{Qual reforma agrária?}\label{qual-reforma-agraria}}
+\subsection{Qual reforma agrária?}\label{qual-reforma-agraria}}
 
 Como foi visto, o assunto é complexo e requer uma análise de todo o
 contexto econômico, social e político vigente. A tão sonhada ``reforma
 agrária'' a que normalmente se refere a mídia, os movimentos sociais ou
-a população em geral, deveria ter tido lugar ainda na década dde 1930,
-ou seja, em fase anterior ao início da industrialização brasileira. Para
+a população em geral, deveria ter tido lugar ainda na década de 1930, ou
+seja, em fase anterior ao início da industrialização brasileira. Para
 Rangel (RANGEL,
 \protect\hyperlink{ref-rangel1986a}{2012}\protect\hyperlink{ref-rangel1986a}{c},
 p. 154), a ``reforma agrária, no sentido convencional da expressão, isto
@@ -546,6 +563,113 @@ para o mercado a cargo da fazenda capitalista com mão-de-obra
 assalariada'',seja implementada (RANGEL,
 \protect\hyperlink{ref-rangel1986a}{2012}\protect\hyperlink{ref-rangel1986a}{c},
 p. 155).
+
+\hypertarget{consideracoes-a-respeito-da-valorizacao-da-terra-no-brasil}{%
+\subsection{Considerações a respeito da valorização da terra no
+Brasil}\label{consideracoes-a-respeito-da-valorizacao-da-terra-no-brasil}}
+
+Para Rangel
+(\protect\hyperlink{ref-rangel1986b}{2012}\protect\hyperlink{ref-rangel1986b}{h},
+pp. 138--139), o problema da terra é uma questão financeira. Quer com
+isso dizer que, ultrapassados os problemas jurídicos da nossa legislação
+pré-capitalista (Lei de Terras de 1850), que dificultava a
+comercialização da terra, o problema do acesso à terra resume-se ao
+problema da capacidade do camponês de comprá-la, o que deveria ter se
+tornado possível devido ao esperado declínio do preço da terra que viria
+com a expansão das fronteiras agrícolas, mas que não ocorreu, devido à
+\emph{demanda especulativa}, o que é um \emph{problema financeiro}.
+
+Considerando-se que a \emph{demanda especulativa} aumenta nos períodos
+de recessão, quando não há melhores oportunidades de investimento, a
+tendência é que o preço da terra varie inversamente à \emph{eficácia
+marginal do capital} (em outras palavras, a grosso modo, a taxa básica
+de juros da economia).
+
+Segundo Rangel
+(\protect\hyperlink{ref-rangel1985}{2012}\protect\hyperlink{ref-rangel1985}{e},
+p. 128), a entrada do Estado no mercado fundiário como comprador, com
+fins de realização de reforma agrária, por exemplo, promoveria a
+elevação do preço da terra, o que aumentaria ainda mais o problema
+agrário.
+
+Desta forma, a reforma agrária viria com a solução do problema
+financeiro da economia, ou seja, com a abertura de novas possibilidades
+de investimentos que diminuíssem a demanda especulativa sobre a terra.
+Como a demanda de terra para cultivo e construção seria pequena em
+relação à demanda especulativa, o preço da terra tenderia a cair
+naturalmente (RANGEL,
+\protect\hyperlink{ref-rangel1986b}{2012}\protect\hyperlink{ref-rangel1986b}{h},
+p. 139).
+
+Ora, lá se vão quase 35 anos, e não consta que a demanda especulativa
+sobre a terra tenha caído, pelo menos não ao ponto do preço da terra
+cair a um nível que possibilitasse uma verdadeira reforma agrária.
+
+\hypertarget{uma-proposta-de-reforma-agraria-viavel}{%
+\subsection{Uma proposta de reforma agrária
+viável}\label{uma-proposta-de-reforma-agraria-viavel}}
+
+Considerando-se que, por motivos variados que aqui não se especula, a
+esperada queda natural do preço da terra não tenha ocorrido, volta-se a
+questão central do problema: qual reforma agrária promover, haja vista
+que o problema não resolveu-se \emph{per se}?
+
+Considera-se que a reforma proposta por Rangel
+(\protect\hyperlink{ref-rangel1986c}{2012}\protect\hyperlink{ref-rangel1986c}{j},
+pp. 144--145) ainda é atual. Esta proposta consiste em conceder uma
+pequena parcela, que segundo Rangel tende a situar em torno de 1/20 ha,
+em terra própria ou do Estado, livre de \emph{redevances féodales}
+(taxas feudais), onde a família ``boia-fria'' possa exercer a produção
+natural, complementando a sua renda salarial.
+
+Oportunidades recentemente foram perdidas, como na construção do canal
+da famigerada transposição do Rio São Francisco, onde aliás estava
+prevista a execução de reforma agrária, infelizmente deixada de lado
+(ver
+\href{https://extra.globo.com/noticias/brasil/incra-integracao-do-sao-francisco-pode-ajudar-reforma-agraria-736897.html}{link})
+
+\hypertarget{conclusao}{%
+\section{Conclusão}\label{conclusao}}
+
+Espera-se que se tenha convencido, com este artigo, da particularidade
+do Brasil e da América Latina quanto ao seu desenvolvimento econômico
+histórico. As exageradas dimensões das metrópoles brasileiras e
+latino-americanas, ao menos, se comparadas às do mundo desenvolvido, não
+permitem uma interpretação muito diferente das aqui obtidas. As altas
+proporções da população urbana nos países ditos \emph{em
+desenvolvimento} em comparação aos \emph{países desenvolvidos} não nos
+permite imaginar que as ferramentas de planejamento urbano desenvolvidas
+no primeiro mundo surtam o efeito esperado em outras regiões menos
+desenvolvidas do globo, pelo menos não na atual realidade
+econômica-social. E isto também se aplica, é claro, ao cadastro técnico
+multifinalitário.
+
+\hypertarget{efeitos-da-falta-de-reforma-agraria-no-cadastro-urbano}{%
+\subsection{Efeitos da falta de reforma agrária no cadastro
+urbano}\label{efeitos-da-falta-de-reforma-agraria-no-cadastro-urbano}}
+
+Enquanto a reforma agrária ideal almejada por muitos infelizmente não
+tem lugar, são o cadastro e as outras ferramentas de planejamento urbano
+que devem se adaptar a essa outra realidade particular da paisagem dos
+países subdesenvolvidos. Tentar, pelo contrário, promover a fórceps a
+modificação da terrível paisagem urbana destes locais para que se
+enquadrem nos modelos teóricos do mundo desenvolvido passaria,
+necessariamente, pela expulsão das classes menos favorecidas das grandes
+cidades, sem que exista do outro lado uma porta de saída.
+
+Obviamente, compreendido este contexto histórico do desenvolvimento do
+capitalismo no Brasil, que não difere muito do desenvolvimento
+capitalista dos outros países da América Latina, não seria de se esperar
+que o cadastro técnico multifinalitário, assim como outras ferramentas
+do planejamento urbano, como concebidos nos países desenvolvidos, possam
+ser replicadas, sem as devidas adaptações, nessa outra realidade, quase
+que completamente oposta.
+
+Desta maneira, vem em boa hora a implantação de núcleos de estudos
+específicos para o estudo e disseminação do cadastro na América Latina
+(TODOROVSKI et al., \protect\hyperlink{ref-lalan}{2019}), em que
+entende-se que deve-se, contudo, concentrar os esforços destes núcleos
+na adaptação das ferramentas clássicas do CTM à realidade regional.
 
 \hypertarget{referencias}{%
 \section*{Referências}\label{referencias}}
@@ -581,30 +705,41 @@ RANGEL, I. Desenvolvimento e Projeto. In: \textbf{Ignácio rangel: Obras
 reunidas}. 3rd ed., v. 1, p.203--283, 2012d. Rio de Janeiro: César
 Benjamin; Contraponto.
 
+\leavevmode\hypertarget{ref-rangel1985}{}%
+RANGEL, I. Problemas da reforma agrária. In: \textbf{Ignácio rangel:
+Obras reunidas}. 3rd ed., v. 2, p.125--128, 2012e. Rio de Janeiro: César
+Benjamin; Contraponto.
+
 \leavevmode\hypertarget{ref-rangel1961}{}%
 RANGEL, I. Demografia e democracia. In: \textbf{Ignácio rangel: Obras
-reunidas}. 3rd ed., v. 2, p.218--220, 2012e. Rio de Janeiro: César
+reunidas}. 3rd ed., v. 2, p.218--220, 2012f. Rio de Janeiro: César
 Benjamin; Contraponto.
 
 \leavevmode\hypertarget{ref-rangel1960}{}%
 RANGEL, I. Depoimento sobre a Questão Agrária. In: \textbf{Ignácio
-rangel: Obras reunidas}. 3rd ed., v. 2, p.205--207, 2012f. Rio de
+rangel: Obras reunidas}. 3rd ed., v. 2, p.205--207, 2012g. Rio de
 Janeiro: César Benjamin; Contraponto.
 
 \leavevmode\hypertarget{ref-rangel1986b}{}%
 RANGEL, I. A Questão Agrária e o ciclo longo. In: \textbf{Ignácio
-rangel: Obras reunidas}. 3rd ed., v. 2, p.129--140, 2012g. Rio de
+rangel: Obras reunidas}. 3rd ed., v. 2, p.129--140, 2012h. Rio de
 Janeiro: César Benjamin; Contraponto.
 
 \leavevmode\hypertarget{ref-rangel1962}{}%
 RANGEL, I. A Questão Agrária brasileira. In: \textbf{Ignácio rangel:
-Obras reunidas}. 3rd ed., v. 2, p.23--80, 2012h. Rio de Janeiro: César
+Obras reunidas}. 3rd ed., v. 2, p.23--80, 2012i. Rio de Janeiro: César
 Benjamin; Contraponto.
 
 \leavevmode\hypertarget{ref-rangel1986c}{}%
 RANGEL, I. A Questão da Terra. In: \textbf{Ignácio rangel: Obras
-reunidas}. 3rd ed., v. 2, p.141--149, 2012i. Rio de Janeiro: César
+reunidas}. 3rd ed., v. 2, p.141--149, 2012j. Rio de Janeiro: César
 Benjamin; Contraponto.
+
+\leavevmode\hypertarget{ref-lalan}{}%
+TODOROVSKI, D.; SALAZAR, R.; JACOME, G.; LEMMEN, C. Establishment of
+latin america land administration network (lalan)., 24. apr. 2019.
+Disponível em:
+\textless{}\url{http://www.fig.net/fig2019/technical_program.htm}\textgreater{}..
 
 
 \end{document}

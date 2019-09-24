@@ -2,12 +2,11 @@
 title: "A Questão Agrária"
 subtitle: "implicações sobre o planejamento urbano e rural"
 author: "Luiz F. P. Droubi"
-date: "15/07/2019"
+date: "24/09/2019"
 output:
   html_document:
     fig_caption: yes
     keep_md: yes
-  word_document: default
   pdf_document:
     includes:
       in_header: preamble.tex
@@ -15,6 +14,7 @@ output:
     latex_engine: xelatex
     number_sections: yes
     toc: no
+  word_document: default
 classoption: a4paper, 12pt
 documentclass: article
 geometry: left=3.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm
@@ -30,17 +30,17 @@ bibliography: bibliography.bib
 
 # Resumo {-}
 
-Este trabalho foi desenvolvido para obtenção de conceito na Disciplina TGT4100181 do Programa de Pós-Graduação em Engenharia de Transportes e Gestão Territorial da UFSC -- Cadastro Técnico Multifinalitário. Teve como motivação as três condições, elencadas por Pereira [-@questaoagraria], como necessárias à implantação da reforma agrária, quais sejam: **a.** que haja no país uma alta concentração de renda; **b.** que haja verdadeira miséria rural no País e; **c.** que haja relação entre a reforma agrária e o desenvolvimento nacional. Pra nós claro está que as condições **a.** e **b.** estão desde há muito tempo intocadas no Brasil, ou seja, estão presentes desde a origem. Coube-nos então, investigar se há verdadeira relação, ainda, entre a reforma e o desenvolvimento e ainda, qual reforma deverá ter lugar no atual contexto econômico, social e político, de maneira que não haja retrocesso no desenvolvimento econômico do país.
+Este trabalho teve como motivação o estudo das três condições elencadas por Pereira [-@questaoagraria] como necessárias à implantação da reforma agrária, quais sejam: **a.** que haja no país uma alta concentração de renda; **b.** que haja verdadeira miséria rural no País e; **c.** que haja relação entre a reforma agrária e o desenvolvimento nacional. Pra nós claro está que as condições **a.** e **b.** estão desde há muito tempo intocadas no Brasil, ou seja, estão presentes desde a origem. Coube-nos então, investigar se há verdadeira relação, ainda, entre a reforma e o desenvolvimento e ainda, qual reforma deverá ter lugar no atual contexto econômico, social e político, de maneira que não haja retrocesso no desenvolvimento econômico do país. Ainda foi tratado da possibilidade de aplicação das ferramentas clássicas do planejamento urbano nas condições das economias da América Latina.
 
 # Introdução
 
-> Do ponto de vista social, todos os fatores se resumem em um "recurso" elementar: o homem. Logo, não é possível seguir conceptualmente o processo de industrialização se não sabemos como o homem aplicava antes o seu tempo de trabalho, como o aplica depois, o que ocorre quando passa de um modo de produzir a outra e em que condições realiza essa passagem.[...] Considerando que na estrutura da economia que precede a industrialização quase toda a população está na "agricultura", é preciso estudar detidamente a organização deste setor. Em outras palavras, se o problema da "agricultura" não foi entendido, tampouco será possível compreender o problema da "indústria", ou manufatura, nem o papel que os serviços desempenham. Falando de modo sucinto, a "manufatura" e os serviços são novas formas de aplicação de parte do tempo de trabalho da população que antes estava na "agricultura". Mas, por sua vez, a própria "agricultura" se reorganiza quando a tranferência ocorre.[@rangel1954, 89]
+> Do ponto de vista social, todos os fatores se resumem em um "recurso" elementar: o homem. Logo, não é possível seguir conceptualmente o processo de industrialização se não sabemos como o homem aplicava antes o seu tempo de trabalho, como o aplica depois, o que ocorre quando passa de um modo de produzir a outra e em que condições realiza essa passagem.[...] Considerando que na estrutura da economia que precede a industrialização quase toda a população está na "agricultura", é preciso estudar detidamente a organização deste setor. Em outras palavras, se o problema da "agricultura" não foi entendido, tampouco será possível compreender o problema da "indústria", ou manufatura, nem o papel que os serviços desempenham. Falando de modo sucinto, a "manufatura" e os serviços são novas formas de aplicação de parte do tempo de trabalho da população que antes estava na "agricultura". Mas, por sua vez, a própria "agricultura" se reorganiza quando a transferência ocorre.[@rangel1954, 89]
 
-O desenvolvimento do capitalismo brasileiro no século XX se deu pela chamada "via prussiana" ou *junker* [@rangel1988, 155], que é um tipo de reforma agrária que consiste na substituição do latifúndio feudal pelo latifúndio capitalista. Este tipo de desenvolvimento tem como característica se dar sem a execução prévia da reforma agrária -- no sentido da distribuição dos latifúndios em pequenas propriedades, como ocorre na via clássica ou democrática.
+O desenvolvimento do capitalismo brasileiro no século XX se deu pela chamada "via prussiana" ou *junker* [@rangel1988, 155], que é um tipo de reforma agrária que consiste na substituição do latifúndio feudal pelo latifúndio capitalista. Este tipo de desenvolvimento tem como característica se dar sem a execução prévia da reforma agrária no sentido clássico, i.e. no sentido da distribuição dos latifúndios em pequenas propriedades, a chamada via clássica ou democrática.
 
 Apesar de permitir imprimir um "impulso extraordinário e energético" à industrialização, a via prussiana "promove uma distribuição muito desigual da renda" [@rangel1988, 155]. característica talvez mais perniciosa do desenvolvimento capitalista por esta via se dá pela formação de um "exército industrial de reserva" demasiado grande, ou seja, um aumento da população urbana desproporcional à necessidade de mão-de-obra necessária nas indústrias do capitalismo nascente nas cidades. O resultado é o crescimento acelerado e desordenado das cidades, com a inevitável formação dos cortiços e favelas para acomodar a parte mais carente da população que, expulsa do campo, vai se aglomerar nos grandes centros urbanos em busca da sua sobrevivência.
 
-Dados compilados pela ONU foram organizados na tabela abaixo com o intuito de demonstrar o tamanho exato deste problema.
+Dados de porcentagem de população urbana em diversos países compilados pela ONU foram organizados na tabela 1 com o intuito de demonstrar a evolução e o atual tamanho deste problema.
 
 <!-- |País/Região                    | Ano   |||||| -->
 <!-- |:------------------------------|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:| -->
@@ -57,255 +57,92 @@ Dados compilados pela ONU foram organizados na tabela abaixo com o intuito de de
 <!-- Table: População urbana (%). Fonte: O autor. -->
 
 <!-- a) Europa, América do Norte, Austrália/Nova Zelândia e Japão.   -->
-<!-- b) Africa, Ásia (menos Japão), América Latina e Caribe mais Melanesia e Micronesia. -->
+<!-- b) Africa, Ásia (menos Japão), América Latina e Caribe mais Melanésia e Micronésia. -->
 
 
 
-<head><style>
-        table {
-              font-family: times ;
-color:  black ;
-text-align: right;}
-        th {
-              padding: 1px 1px 5px 5px;
-	        }
-        td {
-             padding: 1px 1px 5px 5px; }
-      </style></head><table align="center" style="border-collapse: collapse; caption-side:top; font-size:11pt;"><caption style="text-align:center;">População urbana (%). Fonte: O autor.</caption><tr>
-<td colspan=" 1 " align="center" style="font-weight: bold;border-top: 2px solid gray; border-bottom: hidden; border-left: 0px solid black;"></td>
-<td style="border-top: 2px solid gray;border-bottom: hidden">&nbsp;</td>
-<td colspan=" 6 " align="center" style="font-weight: bold;border-top: 2px solid gray; border-bottom: 1px solid gray; border-left: 0px solid black;border-right:NApx solid black;">Ano</td>
-</tr>
-<tr>
-<th <th align="center" style="font-weight: bold;border-left: 0px solid black;border-bottom: 1px solid gray;">País/Região</th>
-<th style="border-bottom: 1px solid gray;">&nbsp;</th>
-<th <th align="center" style="font-weight: bold;border-left: 0px solid black;border-bottom: 1px solid gray;">1960</th>
-<th <th align="center" style="font-weight: bold;border-left: 0px solid black;border-bottom: 1px solid gray;">1970</th>
-<th <th align="center" style="font-weight: bold;border-left: 0px solid black;border-bottom: 1px solid gray;">1980</th>
-<th <th align="center" style="font-weight: bold;border-left: 0px solid black;border-bottom: 1px solid gray;">1990</th>
-<th <th align="center" style="font-weight: bold;border-left: 0px solid black;border-bottom: 1px solid gray;">2000</th>
-<th <th align="center" style="font-weight: bold;border-left: 0px solid black;border-bottom: 1px solid gray;">2015</th>
-</tr>
-<tr>
-<td align="left" style="font-weight: bold; border-left: 0px solid black; ">Mundo</td>
-<td style="border-left: 0px solid black; "></td>
-<td></td>
-<td style="border-left: 0px solid black; "></td>
-<td style="border-left: 0px solid black; "></td>
-<td style="border-left: 0px solid black; "></td>
-<td style="border-left: 0px solid black; "></td>
-<td style="border-left: 0px solid black; "></td>
- </tr>
-<tr>
-<td align="left" style="border-left: 0px solid black;border-top: hidden;">Total</td>
-<td style="border-top: hidden;"></td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">33.8</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">36.6</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">39.3</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">43.0</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">46.7</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">53.9</td>
-</tr>
-<tr>
-<td align="left" style="border-left: 0px solid black;border-top: hidden;">Países Desenvolvidos</td>
-<td style="border-top: hidden;"></td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">61.1</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">66.8</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">70.3</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">72.4</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">74.2</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">78.1</td>
-</tr>
-<tr>
-<td align="left" style="border-left: 0px solid black;border-top: hidden;">Países em Desenvolvimento</td>
-<td style="border-top: hidden;"></td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">21.9</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">25.3</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">29.4</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">34.9</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">40.1</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">49.0</td>
-</tr>
-<tr>
-<td align="left" style="font-weight: bold; border-left: 0px solid black; border-top: hidden; ">Europa</td>
-<td style="border-left: 0px solid black; border-top: hidden; "></td>
-<td style="border-top: hidden;"></td>
-<td style="border-left: 0px solid black; border-top: hidden; "></td>
-<td style="border-left: 0px solid black; border-top: hidden; "></td>
-<td style="border-left: 0px solid black; border-top: hidden; "></td>
-<td style="border-left: 0px solid black; border-top: hidden; "></td>
-<td style="border-left: 0px solid black; border-top: hidden; "></td>
- </tr>
-<tr>
-<td align="left" style="border-left: 0px solid black;border-top: hidden;">Total</td>
-<td style="border-top: hidden;"></td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">57.4</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">63.1</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">67.6</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">69.9</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">71.1</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">73.9</td>
-</tr>
-<tr>
-<td align="left" style="border-left: 0px solid black;border-top: hidden;">Oriental</td>
-<td style="border-top: hidden;"></td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">48.9</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">56.6</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">63.8</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">68.0</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">68.2</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">69.3</td>
-</tr>
-<tr>
-<td align="left" style="border-left: 0px solid black;border-top: hidden;">Ocidental</td>
-<td style="border-top: hidden;"></td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">68.6</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">72.1</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">73.4</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">74.0</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">76.0</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">79.4</td>
-</tr>
-<tr>
-<td align="left" style="font-weight: bold; border-left: 0px solid black; border-top: hidden; ">América</td>
-<td style="border-left: 0px solid black; border-top: hidden; "></td>
-<td style="border-top: hidden;"></td>
-<td style="border-left: 0px solid black; border-top: hidden; "></td>
-<td style="border-left: 0px solid black; border-top: hidden; "></td>
-<td style="border-left: 0px solid black; border-top: hidden; "></td>
-<td style="border-left: 0px solid black; border-top: hidden; "></td>
-<td style="border-left: 0px solid black; border-top: hidden; "></td>
- </tr>
-<tr>
-<td align="left" style="border-left: 0px solid black;border-top: hidden;">Latina e Caribe</td>
-<td style="border-top: hidden;"></td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">49.4</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">57.3</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">64.6</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">70.7</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">75.5</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">79.9</td>
-</tr>
-<tr>
-<td align="left" style="border-left: 0px solid black;border-top: hidden;">do Sul</td>
-<td style="border-top: hidden;"></td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">51.8</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">60.0</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">67.6</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">74.2</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">79.6</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">83.5</td>
-</tr>
-<tr>
-<td align="left" style="border-left: 0px solid black;border-top: hidden;">Central</td>
-<td style="border-top: hidden;"></td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">46.4</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">53.7</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">60.3</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">65.0</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">68.7</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">73.7</td>
-</tr>
-<tr>
-<td align="left" style="border-left: 0px solid black;border-top: hidden;">do Norte</td>
-<td style="border-top: hidden;"></td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">69.9</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">73.8</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">73.9</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">75.4</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">79.1</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">81.6</td>
-</tr>
-<tr>
-<td align="left" style="border-left: 0px solid black;border-top: hidden;">EUA</td>
-<td style="border-top: hidden;"></td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">70.0</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">73.6</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">73.7</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">75.3</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">79.1</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">81.7</td>
-</tr>
-<tr>
-<td align="left" style="border-left: 0px solid black;border-top: hidden;">Argentina</td>
-<td style="border-top: hidden;"></td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">73.6</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">78.9</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">82.9</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">87.0</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">89.1</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">91.5</td>
-</tr>
-<tr>
-<td align="left" style="border-left: 0px solid black;border-top: hidden;">Brasil</td>
-<td style="border-top: hidden;"></td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">46.1</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">55.9</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">65.5</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">73.9</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">81.2</td>
-<td align="right" style="border-left: 0px solid black;border-top: hidden;">85.8</td>
-</tr>
-<tr>
-<td colspan="8" align="left" style="font-size:9pt ;border-top: 1px solid black; border-bottom: hidden;"></td>
-</tr>
-</table>
+\begin{table}[!h]
 
-<!-- # ```{r} -->
-<!-- # ztable2flextable(z) -->
-<!-- # ``` -->
+\caption{\label{tab:unnamed-chunk-2}População Urbana (\%). Fonte: Nações Unidas.}
+\centering
+\begin{tabular}{lrrrrrr}
+\toprule
+\multicolumn{1}{c}{} & \multicolumn{6}{c}{Ano} \\
+\cmidrule(l{3pt}r{3pt}){2-7}
+País/Região & 1960 & 1970 & 1980 & 1990 & 2000 & 2015\\
+\midrule
+\rowcolor{gray!6}  \addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{Mundo}}\\
+\hspace{1em}Total & 33,8 & 36,6 & 39,3 & 43,0 & 46,7 & 53,9\\
+\hspace{1em}Países Desenvolvidos & 61,1 & 66,8 & 70,3 & 72,4 & 74,2 & 78,1\\
+\hspace{1em}Países em Desenvolvimento & 21,9 & 25,3 & 29,4 & 34,9 & 40,1 & 49,0\\
+\rowcolor{gray!6}  \addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{Europa}}\\
+\hspace{1em}Total & 57,4 & 63,1 & 67,6 & 69,9 & 71,1 & 73,9\\
+\hspace{1em}Oriental & 48,9 & 56,6 & 63,8 & 68,0 & 68,2 & 69,3\\
+\hspace{1em}Ocidental & 68,6 & 72,1 & 73,4 & 74,0 & 76,0 & 79,4\\
+\rowcolor{gray!6}  \addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{América}}\\
+\hspace{1em}Latina e Caribe & 49,4 & 57,3 & 64,6 & 70,7 & 75,5 & 79,9\\
+\hspace{1em}do Sul & 51,8 & 60,0 & 67,6 & 74,2 & 79,6 & 83,5\\
+\hspace{1em}Central & 46,4 & 53,7 & 60,3 & 65,0 & 68,7 & 73,7\\
+\hspace{1em}do Norte & 69,9 & 73,8 & 73,9 & 75,4 & 79,1 & 81,6\\
+\hspace{1em}EUA & 70,0 & 73,6 & 73,7 & 75,3 & 79,1 & 81,7\\
+\hspace{1em}Argentina & 73,6 & 78,9 & 82,9 & 87,0 & 89,1 & 91,5\\
+\hspace{1em}Brasil & 46,1 & 55,9 & 65,5 & 73,9 & 81,2 & 85,8\\
+\bottomrule
+\end{tabular}
+\end{table}
 
 
-Em meados dos anos 60, apenas 46,1% da população brasileira era urbana, uma proporção bem menor do que a dos países do então primeiro mundo (EUA e Europa Ocidental), hoje ditos desenvolvidos, que girava então em torno dos 70% da população. 
+
+
+Em meados dos anos 60, apenas 46,1% da população brasileira era urbana, uma proporção bem menor do que a dos países do então *primeiro mundo* (EUA e Europa Ocidental), hoje ditos *desenvolvidos*, que girava então em torno dos 70% da população. 
 
 Em apenas 10 anos, já em meados da década de 70, este número sofria um aumento vertiginoso de quase 10 pontos percentuais, com 55,9% da população urbana. A população urbana brasileira equiparava-se à da Europa Oriental.
 
 Já na década de 80 a população urbana no Brasil ultrapassaria a da Europa Oriental, chegando à valores próximos da média para o continente europeu como um todo (ocidental e oriental), enquanto a população urbana no mundo desenvolvido se estagnava.
 
-Chegado os anos 90, a população urbana brasileira atingiu notáveis 73,9% da população brasileira, número equiparado ao da população urbana do mundo desenvolvido (74% na Europa Oriental).
+Chegado os anos 90, a população urbana brasileira atingiu notáveis 73,9% da população brasileira, número equiparado ao da população urbana do mundo desenvolvido (74% na Europa Ocidental).
 
-Em meados dos anos 2000, já então no século atual, ousamos ultrapassar, em proporção, a população urbana da Europa Oriental e a dos EUA, chegando ao último dado de 2015, com 85,8% da população brasileira vivendo nas cidades.
+Em meados dos anos 2000, já então no século atual, ousamos ultrapassar, em proporção, a população urbana da Europa Ocidental e a dos EUA, chegando ao último dado de 2015, com 85,8% da população brasileira vivendo nas cidades.
 
 Há de se levar em consideração, ainda, que este "êxodo rural" ainda foi acompanhado de um crescimento demográfico expressivo.
 
 Todo este crescimento expressivo seria salutar se tivesse se dado no contexto do rápido desenvolvimento da economia nacional. Isto, porém, não ocorreu durante todo o período analisado. O crescimento da economia brasileira acelerou-se na segunda quadra da década de 60 e manteve-se alto até fins da década seguinte, porém estagnou-se na década de 80, a chamada década perdida, sem que com isso a população urbana deixasse de crescer vertiginosamente.
 
-Para Rangel [@rangel1986a, 151], "essa redistribuição da população entre os quadros urbano e rural não tem, em si mesma, nada de anormal.[...] A urbanização, em si mesma, é um fenômeno perfeitamente normal, numa economia em processo de industrialização. O que não é normal é o ritmo que imprimimos ao *nosso* processo de urbanização, que implica criar, nas cidades, uma oferta de mão-de-obra em descompasso com a demanda que a industrialização vai criando."
+Para Rangel [-@rangel1986a, 151], "essa redistribuição da população entre os quadros urbano e rural não tem, em si mesma, nada de anormal.[...] A urbanização, em si mesma, é um fenômeno perfeitamente normal, numa economia em processo de industrialização. O que não é normal é o ritmo que imprimimos ao *nosso* processo de urbanização, que implica criar, nas cidades, uma oferta de mão-de-obra em descompasso com a demanda que a industrialização vai criando."
 
 Todo este processo só poderia, então, ter desaguado no inchaço das principais cidades brasileiras. Desnecessário dizer que o planejamento urbano nestas condições é praticamente inviável. As administrações municipais, nem que fossem as mais eficientes, teriam capacidade de planejar e disciplinar o uso do solo urbano nesta "velocidade migratória".
 
-Para Rangel [-@rangel1988, 156-157], com o desenvolvimento da indústria pesada no Brasil, a crise agrária, antes cíclica, tornou-se crônica, criando um "vasto deslocamento de população, na direção geral campo-cidade. Esse movimento se faz escalonadamente, das áreas rurais para as cidades pequenas; destas para as médias e grandes, e posteriormente para as metrópoles gigantes. No fim da linha, portanto, vamos encontrar as cidades de São Paulo e do Rio de Janeiro". Enfim, para Rangel, a origem deste "multidinário deslocamento demográfico", está "o modo como o país preparou sua estrutura agrária para a industrialização".
+Para Rangel [-@rangel1988, 156-157], com o desenvolvimento da indústria pesada no Brasil, a crise agrária, antes cíclica, tornou-se crônica, criando um "vasto deslocamento de população, na direção geral campo-cidade. Esse movimento se faz escalonadamente, das áreas rurais para as cidades pequenas; destas para as médias e grandes, e posteriormente para as metrópoles gigantes. No fim da linha, portanto, vamos encontrar as cidades de São Paulo e do Rio de Janeiro". Enfim, para Rangel, a origem deste "multitudinário deslocamento demográfico", está "o modo como o país preparou sua estrutura agrária para a industrialização".
 
 # Contexto histórico
 
 O Capitalismo é um sistema político-econômico que, historicamente, substitui o Feudalismo, sistema em que a população encontrava-se toda concentrada no campo.
 
-Nas sociedades pré-capitalistas, a população predominante rural organizava-se no chamado 'Complexo Rural', ou seja, eram produzidos pelo camponês não apenas os produtos agrícolas, mas todo o ferramental necessário, suas vestes e utensílios.
+Nas sociedades pré-capitalistas, a população predominante rural organizava-se no chamado 'Complexo Rural', ou seja, num ambiente rural onde eram produzidos não apenas os produtos agrícolas, mas onde também eram produzidos, pelos próprios  camponeses, em uma muito baixa produtividade, todo o ferramental necessário para as suas atividades agrícolas, assim como suas vestes, utensílios domésticos e outros itens.
 
-A passagem do sistema feudal para o sistema capitalista ocorre com a divisão social do trabalho, ou seja, com o desenvolvimento de indústrias que vão aos poucos absorver as atividades não-agrícolas realizadas no campo.
+A passagem do sistema feudal para o sistema capitalista ocorre com a *divisão social do trabalho*, ou seja, com o desenvolvimento de indústrias que vão aos poucos absorver as atividades não-agrícolas realizadas no campo.
 
-> Numa economia em expansão, com crescente industrialização, comercialização e  urbanização, numerosos processos anteriormente levados a efeito antes dentro da casa da família ou unidade (econômica) famíliar, ou são completamente abandonados ou substituídos por processos semelhantes em bases comerciais.(@kuznets [p. 41] *apud* @rangel1956 [p. 218])
+> Numa economia em expansão, com crescente industrialização, comercialização e  urbanização, numerosos processos anteriormente levados a efeito antes dentro da casa da família ou unidade (econômica) familiar, ou são completamente abandonados ou substituídos por processos semelhantes em bases comerciais.(@kuznets [p. 41] *apud* @rangel1956 [p. 218])
 
-# Feudalismo
+## Feudalismo
 
-No feudalismo, tipo de organização social que historicamente antecede o capitalismo, toda terra está concentrada nas mãos do rei.
-
-As "leis" que regem uma sociedade feudal são:
+As "leis" ou "motores primários" do feudalismo são [@rangel1985, 126]:
 
 * *All land is king's land*
 * *Nulle terre sans seigneur*
 
-Segundo Rangel [-@rangel1961, 219], "a existência de terra livre é incompatível com o feudalismo", e , por conta disto, "nas condições feudais, não tem preço e é, de fato ou de direito, inalienável"[@rangel1960, 206].
+No feudalismo, tipo de organização social que historicamente antecede o capitalismo, toda terra está concentrada nas mãos do rei. Segundo Rangel [-@rangel1961, 219], "a existência de terra livre é incompatível com o feudalismo", e , por conta disto, "nas condições feudais, não tem preço e é, de fato ou de direito, inalienável"[@rangel1960, 206].
 
-## A crise do feudalismo
+### A crise do feudalismo
 
-A sociedade feudal entra em crise quando a produção agrícola não consegue suprir a demanda da superpopulação gerada.
+A sociedade feudal entra em crise quando a produção agrícola não consegue suprir a demanda da superpopulação gerada. Segundo Rangel [-@rangel1961, 219], "tempo houve em que a expansão do estoque populacional era objetivamente a maneira mais eficaz de expandir as forças produtivas e o produto social. Nesse tempo (regime feudal), a riqueza dos príncipes se media pelas almas dos seus domínios, e aumentar o número destas era a maneira óbvia de expandir aquela riqueza e também a do corpo social. Este foi forjando para si uma ética, um direito e uma política conducentes a esse resultado".
 
-Segundo Rangel [-@rangel1961, 219], "tempo houve em que a expansão do estoque populacional era objetivamente a maneira mais eficaz de expandir as forças produtivas e o produto social. Nesse tempo (regime feudal), a riqueza dos príncipes se media pelas almas dos seus domínios, e aumentar o número destas era a maneira óbvia de expandir aquela riqueza e também a do corpo social. Este foi forjando para si uma ética, um direito e uma política conducentes a esse resutado".
+### O Complexo Rural
 
-## O Complexo Rural
-
-> A população de um páis de economia mercantil debilmente desenvolvida (ou não densevolvida de todo) é quase exclusivamente agrícola. Todavia, não se deve deduzir daí que ela se ocupa só da agricultura. Significa apenas que a população ocupada na agricultura transforma, ela mesma, os produtos da terra, sendo quase inexistentes o intercâmbio e a divisão do trabalho. (LENIN *apud* @rangel1954 [p. 99])
+> A população de um país de economia mercantil debilmente desenvolvida (ou não desenvolvida de todo) é quase exclusivamente agrícola. Todavia, não se deve deduzir daí que ela se ocupa só da agricultura. Significa apenas que a população ocupada na agricultura transforma, ela mesma, os produtos da terra, sendo quase inexistentes o intercâmbio e a divisão do trabalho. (LENIN *apud* @rangel1954 [p. 99])
 
 Segundo Rangel [-@rangel1956, p.98], a unidade agrícola fechada é "um microcosmo econômico no qual as pessoas distribuem seu tempo entre numerosas atividades. Cada uma dessas atividades representa o estado rudimentar daquilo que, com o desenvolvimento, se tornará uma 'indústria' (...) É evidente que o camponês não tem consciência da multiplicidade de suas atividades. Ele considera que elas formam um todo indivisível. Essa inespecialização é sua especialidade. (...) Chamaremos esse microcosmo econômico, essa 'matriz de insumo-produto' em miniatura, de 'complexo rural'".
 
@@ -321,19 +158,19 @@ a. as que oferecem um incentivo positivo para a incorporação, à economia de m
 
 b. as que buscam forçar a abertura do complexo a partir de dentro, provocando uma deterioração da produtividade das atividades manufatureiras dentro do complexo.
 
-As medidas do tipo a) temm seu exemplo mais típico nos EUA e também na França, enquanto as medidas do tipo b) predominaram na Inglaterra, Alemanha e Japão [@rangel1954, 114-115].
+As medidas do tipo a) tem seu exemplo mais típico nos EUA e também na França, enquanto as medidas do tipo b) predominaram na Inglaterra, Alemanha e Japão [@rangel1954, 114-115].
 
-# Êxodo rural e industrialização
+## Êxodo rural e industrialização
 
-> A revolução democrático-burguesa, nos casos em que a gleba feudal é -- como aconteceu na Europa Ocidental (principalmente, na França) e nos Estados Unidos -- substituída pela pequena propriedade familiar ou *homestead*, ao fortalecer as bases da economia natural ou de autoconsumo, resolve satisfatoriamente o problema na absorção dos excedentes de mão-de-obra no seio da própria economia camponesa, estancando ou reduzindo drasticamente o fluxo populacional responsálve pelo êxodo campo-cidade [@rangel1986b, 133].
+> A revolução democrático-burguesa, nos casos em que a gleba feudal é -- como aconteceu na Europa Ocidental (principalmente, na França) e nos Estados Unidos -- substituída pela pequena propriedade familiar ou *homestead*, ao fortalecer as bases da economia natural ou de autoconsumo, resolve satisfatoriamente o problema na absorção dos excedentes de mão-de-obra no seio da própria economia camponesa, estancando ou reduzindo drasticamente o fluxo populacional responsável pelo êxodo campo-cidade [@rangel1986b, 133].
 
-Segundo, Rangel [-@rangel1986b, 133], no entanto, "esse tipo de superação das relações de produção feudais", ou seja, a revolução democrático-burguesa, "não é característico do Brasil. Sem embargo do surgimento de algumas 'ilhas' de pequena propriedade camponse, notadamente nas áreas de colonização européia e japonesa nos estados do Sul, que mais confirmam a regra."
+Segundo Rangel [-@rangel1986b, 133], no entanto, "esse tipo de superação das relações de produção feudais", ou seja, a revolução democrático-burguesa, "não é característico do Brasil. Sem embargo do surgimento de algumas 'ilhas' de pequena propriedade camponesa, notadamente nas áreas de colonização européia e japonesa nos estados do Sul, que mais confirmam a regra."
 
-Pelo contrário, "o modelo de desenvolvimento do capitalismo na agricultura brasileira foi e é a grande exploração capitalista, cada dia mais propensa ao uso de mão-de-obra assalariada e tendendo sempre ap desmantelamento das bases da economia natural, causando por isso mesmo, o fenômeno do êxodo rural" [@rangel1986b, 134].
+Pelo contrário, "o modelo de desenvolvimento do capitalismo na agricultura brasileira foi e é a grande exploração capitalista, cada dia mais propensa ao uso de mão-de-obra assalariada e tendendo sempre ao desmantelamento das bases da economia natural, causando por isso mesmo, o fenômeno do **êxodo rural**" [@rangel1986b, 134, grifo nosso].
 
 O caso brasileiro, porém, não é único: "a industrialização da Inglaterra fez-se também, originariamente, nas condições de um enorme excedente de mão de obra, causado pelo *enclosure*...". No caso inglês, porém, "o motor primário" do desenvolvimento foi a produção manufatureira para exportação, enquanto no Brasil a industrialização teve seu desenvolvimento estimulado, "nas condições de uma crônica crise cambial", pela política de substituição de importações [@rangel1962, 43-44].
 
-Ocorre que, de acordo com Rangel [-@rangel1986b, 134], "a superabundância e a barateza da mão-de-obra não costumam ser bons condicionanetes do processo de industrialização, dado que desestimulam a formação de capital, isto é, o investimento. Ora, numa economia capitalista, o investimento é o motor primário do desenvolvimento ...". 
+Ocorre que, de acordo com Rangel [-@rangel1986b, 134], "a superabundância e a barateza da mão-de-obra não costumam ser bons condicionantes do processo de industrialização, dado que desestimulam a formação de capital, isto é, o investimento. Ora, numa economia capitalista, o investimento é o motor primário do desenvolvimento ...". 
 
 Por este motivo, a "economia brasileira, nas condições de uma crise agrária profunda e crônica que, entre outras coisas, **causava uma urbanização monstruosa**, sem comparação possível com a demanda de mão-de-obra que a indústria e os serviços não-agrícolas estavam suscitando nas cidades (perto de três milhões de novos citadinos a cada ano)..." [@rangel1986b, 134]
 
@@ -343,12 +180,44 @@ No capitalismo, é conhecido o papel do investimento ou formação de capital na
 
 Segundo Rangel [@rangel1986c, 142], um "'exército industrial de reserva' limitado, isto é, algum desemprego, pode ser considerado útil, do ponto de vista da produção capitalista, porque serve de instrumento de coerção para os trabalhadores livres, fortalecendo assim a disciplina no trabalho". No entanto, quando este torna-se excessivo, "pode converter-se em obstáculo ao desenvolvimento da própria economia capitalista. Ora, aqui está o nosso problema, dado que o 'exército industrial de reserva' brasileiro tornou-se teratologicamente grande. Por isso mesmo, a questão agrária, que se exprime precipuamente pela formação desse 'exército', não interessa apenas aos camponeses, mas à sociedade como um todo."
 
-De acordo com Rangel [-@rangel1988, 156], "a via democrática -- divisão dos latifúndios em pequenas propriedades -- ao favorecer uma distribuição menos desigualitária de re da cria condições para um vigoroso efeito multiplicador dos investimentos, isto é, forte efeito para trás. Inversamente, a via prussiana, ao promover uma distribuição de renda mais desigualitária, debilita o efeito multiplicador, isto é, para trás, mas, por força da concentração de renda, aumenta o peso relativo dos investimentos dispensando mão-de-obra e, por isso mesmo, aumentando o efeito para diante."
+De acordo com Rangel [-@rangel1988, 156], "a via democrática -- divisão dos latifúndios em pequenas propriedades -- ao favorecer uma distribuição menos desigualitária de renda, cria condições para um vigoroso efeito multiplicador dos investimentos, isto é, forte efeito para trás. Inversamente, a via prussiana, ao promover uma distribuição de renda mais desigualitária, debilita o efeito multiplicador, isto é, para trás, mas, por força da concentração de renda, aumenta o peso relativo dos investimentos dispensando mão-de-obra e, por isso mesmo, aumentando o efeito para diante."
 
-# Qual reforma agrária?
+## Qual reforma agrária?
 
 Como foi visto, o assunto é complexo e requer uma análise de todo o contexto econômico, social e político vigente. A tão sonhada "reforma agrária" a que normalmente se refere a mídia, os movimentos sociais ou a população em geral, deveria ter tido lugar ainda na década de 1930, ou seja, em fase anterior ao início da industrialização brasileira. Para Rangel [@rangel1986a, 154], a "reforma agrária, no sentido convencional da expressão, isto é, a implantação de propriedade familiar suficientemente ampla, para permitir, ao lado da produção agrícola para o mercado, uma produção complementar agrícola e não-agrícola, isto é, para autoconsumo, pode justificar-se em certos casos, especialmente quando seja possível o renascimento da policultura tradicional e onde a fazenda capitalista, mono ou oligoculturista, ainda não tenha aparecido". No atual contexto econômico, porém, esta reforma, com a dissolução do latifúndio produtivo para assentamento de famílias, levaria a uma regressão tecnológica no campo, o que seria altamente prejudicial para a economia brasileira como um todo. 
 
 Isto dito, Rangel então propõe então que, no Brasil, com a agricultura capitalista plenamente desenvolvida, uma segunda variante de reforma agrária, "*não necessariamente rural*", com a finalidade de "recompor a economia natural onde quer que isto seja possível", viabilizando "uma produção complementar, deixando a produção agrícola para o mercado a cargo da fazenda capitalista com mão-de-obra assalariada",seja implementada [@rangel1986a, 155].
+
+## Considerações a respeito da valorização da terra no Brasil
+
+Para Rangel [-@rangel1986b, 138-139], o problema da terra é uma questão financeira. Quer com isso dizer que, ultrapassados os problemas jurídicos da nossa legislação pré-capitalista (Lei de Terras de 1850), que dificultava a comercialização da terra, o problema do acesso à terra resume-se ao problema da capacidade do camponês de comprá-la, o que deveria ter se tornado possível devido ao esperado declínio do preço da terra que viria com a expansão das fronteiras agrícolas, mas que não ocorreu, devido à *demanda especulativa*, o que é um *problema financeiro*.
+
+Considerando-se que a *demanda especulativa* aumenta nos períodos de recessão, quando não há melhores oportunidades de investimento, a tendência é que o preço da terra varie inversamente à *eficácia marginal do capital* (em outras palavras, a grosso modo, a taxa básica de juros da economia).
+
+Segundo Rangel [-@rangel1985, 128], a entrada do Estado no mercado fundiário como comprador, com fins de realização de reforma agrária, por exemplo, promoveria a elevação do preço da terra, o que aumentaria ainda mais o problema agrário. 
+
+Desta forma, a reforma agrária viria com a solução do problema financeiro da economia, ou seja, com a abertura de novas possibilidades de investimentos que diminuíssem a demanda especulativa sobre a terra. Como a demanda de terra para cultivo e construção seria pequena em relação à demanda especulativa, o preço da terra tenderia a cair naturalmente [@rangel1986b, 139].
+
+Ora, lá se vão quase 35 anos, e não consta que a demanda especulativa sobre a terra tenha caído, pelo menos não ao ponto do preço da terra cair a um nível que possibilitasse uma verdadeira reforma agrária.
+
+## Uma proposta de reforma agrária viável
+
+Considerando-se que, por motivos variados que aqui não se especula, a esperada queda natural do preço da terra não tenha ocorrido, volta-se a questão central do problema: qual reforma agrária promover, haja vista que o problema não resolveu-se *per se*?
+
+Considera-se que a reforma proposta por Rangel [-@rangel1986c, 144-145] ainda é atual. Esta proposta consiste em conceder uma pequena parcela, que segundo Rangel tende a situar em torno de 1/20 ha, em terra própria ou do Estado, livre de *redevances féodales* (taxas feudais), onde a família "boia-fria" possa exercer a produção natural, complementando a sua renda salarial. 
+
+Oportunidades recentemente foram perdidas, como na construção do canal da famigerada transposição do Rio São Francisco, onde aliás estava prevista a execução de reforma agrária, infelizmente deixada de lado (ver [link](https://extra.globo.com/noticias/brasil/incra-integracao-do-sao-francisco-pode-ajudar-reforma-agraria-736897.html))
+
+# Conclusão
+
+Espera-se que se tenha convencido, com este artigo, da particularidade do Brasil e da América Latina quanto ao seu desenvolvimento econômico histórico. As exageradas dimensões das metrópoles brasileiras e latino-americanas, ao menos, se comparadas às do mundo desenvolvido, não permitem uma interpretação muito diferente das aqui obtidas. As altas proporções da população urbana nos países ditos *em desenvolvimento* em comparação aos *países desenvolvidos* não nos permite imaginar que as ferramentas de planejamento urbano desenvolvidas no primeiro mundo surtam o efeito esperado em outras regiões menos desenvolvidas do globo, pelo menos não na atual realidade econômica-social. E isto também se aplica, é claro, ao cadastro técnico multifinalitário. 
+
+## Efeitos da falta de reforma agrária no cadastro urbano
+
+Enquanto a reforma agrária ideal almejada por muitos infelizmente não tem lugar, são o cadastro e as outras ferramentas de planejamento urbano que devem se adaptar a essa outra realidade particular da paisagem dos países subdesenvolvidos. Tentar, pelo contrário, promover a fórceps a modificação da terrível paisagem urbana destes locais para que se enquadrem nos modelos teóricos do mundo desenvolvido passaria, necessariamente, pela expulsão das classes menos favorecidas das grandes cidades, sem que exista do outro lado uma porta de saída.
+
+Obviamente, compreendido este contexto histórico do desenvolvimento do capitalismo no Brasil, que não difere muito do desenvolvimento capitalista dos outros países da América Latina, não seria de se esperar que o cadastro técnico multifinalitário, assim como outras ferramentas do planejamento urbano, como concebidos nos países desenvolvidos, possam ser replicadas, sem as devidas adaptações, nessa outra realidade, quase que completamente oposta.
+
+Desta maneira, vem em boa hora a implantação de núcleos de estudos específicos para o estudo e disseminação do cadastro na América Latina [@lalan], em que entende-se que deve-se, contudo, concentrar os esforços destes núcleos na adaptação das ferramentas clássicas do CTM à realidade regional.
 
 # Referências {-}
